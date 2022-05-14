@@ -1,0 +1,202 @@
+[
+    {
+        "id": "VaquitaMarina",
+        "alignment": "left",
+        "hidden": false,
+        "title": "Vaquita Marina",
+        "scientificName": "Phocoena sinus",
+        "family": "Phocoenidae",
+        "image": "./path/to/image/source.png",
+        "description": "Es uno de los cetáceos más pequeños del mundo, único mamífero marino mexicano miembro de la familia Phocoenidae (marsopas verdaderas), esta especie es endémica de México, habita en el norte del Golfo de California",
+        "percent20years": "",
+        "percentNow": "20",
+        "location": [
+            {
+            "center": [-122.418398, 37.759483],
+            "zoom": 8.5,
+            "pitch": 60,
+            "bearing": 0
+            }
+        ],
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "callback": "",
+        "onChapterEnter": [],
+        "onChapterExit": []
+    }, 
+    {
+        "id": "BallenaAzul",
+        "alignment": "left",
+        "hidden": false,
+        "title": "Ballena Azul",
+        "scientificName": "Balaenoptera musculus Intermedia",
+        "family": "Balaenopteridae",
+        "image": "./path/to/image/source.png",
+        "description": "La ballena azul es el animal conocido más grande que jamás haya poblado la Tierra. Estos majestuosos mamíferos marinos dominan los océanos con sus 30 metros de longitud y hasta 180 toneladas de peso.",
+        "percent20years": "",
+        "percentNow": "60 000",
+        "location": [
+            {
+            "center": [-122.418398, 37.759483],
+            "zoom": 8.5,
+            "pitch": 60,
+            "bearing": 0
+            }
+        ],
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "callback": "",
+        "onChapterEnter": [],
+        "onChapterExit": []
+    },
+    {
+        "id": "TortugaLora",
+        "alignment": "left",
+        "hidden": false,
+        "title": "Tortuga Lora",
+        "scientificName": "Lepidochelys kempii",
+        "family": "Cheloniidae",
+        "image": "./path/to/image/source.png",
+        "description": "La tortuga lora es la tortuga marina más pequeña que existe actualmente. La longitud recta de su caparazón varía, con un intervalo de los 52 hasta los 75 cm; el peso se encuentra entre los 30 y 50 kg. En tortugas adultas la vista dorsal del caparazón tiene forma casi circular con un coloración gris olivo a verde oscuro, mientras que la sección del plastrón presenta una gama que va de blanco a amarillo.",
+        "percent20years": "",
+        "percentNow": "20 000 - 30 000",
+        "location": [
+            {
+            "center": [-122.418398, 37.759483],
+            "zoom": 8.5,
+            "pitch": 60,
+            "bearing": 0
+            }
+        ],
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "callback": "",
+        "onChapterEnter": [],
+        "onChapterExit": []
+    },
+    {
+        "id": "LeonMarinoSteller",
+        "alignment": "left",
+        "hidden": false,
+        "title": "Leon Marino Steller",
+        "scientificName": "Eumetopias jubatus",
+        "family": "Otariidae",
+        "image": "./path/to/image/source.png",
+        "description": "El león marino de Steller es una especie de mamífero pinnípedo de la familia de los otáridos que habita en las costas rocosas y aguas costeras del norte del Pacífico, tanto en Asia como en América.",
+        "percent20years": "",
+        "percentNow": "10 000 - 12 000",
+        "location": [
+            {
+            "center": [-122.418398, 37.759483],
+            "zoom": 8.5,
+            "pitch": 60,
+            "bearing": 0
+            }
+        ],
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "callback": "",
+        "onChapterEnter": [],
+        "onChapterExit": []
+    },
+    {
+        "id": "TiburonMartilloGigante",
+        "alignment": "left",
+        "hidden": false,
+        "title": "Tiburon Martillo Gigante",
+        "scientificName": "Sphyrna mokarran",
+        "family": "Sphyrnidae",
+        "image": "./path/to/image/source.png",
+        "description": "El gran tiburón martillo es el más grande de las nueve especies conocidas de este tiburón, que puede crecer hasta los seis metros de longitud y pesar hasta 450 kilos, aunque este peso no es el habitual en estos escualos.",
+        "percent20years": "425",
+        "percentNow": "Desconocido",
+        "location": [
+            {
+            "center": [-122.418398, 37.759483],
+            "zoom": 8.5,
+            "pitch": 60,
+            "bearing": 0
+            }
+        ],
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "callback": "",
+        "onChapterEnter": [],
+        "onChapterExit": []
+    },
+    {
+        "id": "RorcualComun",
+        "alignment": "left",
+        "hidden": false,
+        "title": "Rorcual Comun",
+        "scientificName": "Balaenoptera physalus",
+        "family": "Balaenopteridae",
+        "image": "./path/to/image/source.png",
+        "description": "El rorcual común es un animal pelágico, que vive en aguas oceánicas aunque puede acercarse a la plataforma continental. Se distribuye por la mayoría de los océanos de zonas templadas y polares. Es raro encontrarlos en latitudes tropicales.",
+        "percent20years": "",
+        "percentNow": "",
+        "location": [
+            {
+            "center": [-122.418398, 37.759483],
+            "zoom": 8.5,
+            "pitch": 60,
+            "bearing": 0
+            }
+        ],
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "callback": "",
+        "onChapterEnter": [],
+        "onChapterExit": []
+    },
+    {
+        "id": "DelfinCabezaBlanca",
+        "alignment": "left",
+        "hidden": false,
+        "title": "Delfin Cabeza Blanca",
+        "scientificName": "Balaenoptera physalus",
+        "family": "Balaenopteridae",
+        "image": "./path/to/image/source.png",
+        "description": "El delfín de Héctor o delfín de cabeza blanca (Cephalorhynchus hectori) es una especie de cetáceo odontoceto de la familia Delphinidae que habita los mares de Nueva Zelanda",
+        "percent20years": "",
+        "percentNow": "100",
+        "location": [
+            {
+            "center": [-122.418398, 37.759483],
+            "zoom": 8.5,
+            "pitch": 60,
+            "bearing": 0
+            }
+        ],
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "callback": "",
+        "onChapterEnter": [],
+        "onChapterExit": []
+    },
+    {
+        "id": "TortugVerde",
+        "alignment": "left",
+        "hidden": false,
+        "title": "Tortuga Verde",
+        "scientificName": "Chelonia mydas",
+        "family": "Cheloniidae",
+        "image": "./path/to/image/source.png",
+        "description": "La tortuga verde es una especie típica de aguas tropicales, es la tortuga marina que presenta mayor número de hembras reproductoras a nivel mundial y es la segunda especie más abundante del Mediterráneo. Relativamente frecuente en el sur del estrecho de Gibraltar y en el Mediterráneo oriental. Las zonas de nidificación más importantes en el Mediterráneo son Turquía y Chipre.",
+        "percent20years": "",
+        "percentNow": "203 000",
+        "location": [
+            {
+            "center": [-122.418398, 37.759483],
+            "zoom": 8.5,
+            "pitch": 60,
+            "bearing": 0
+            }
+        ],
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "callback": "",
+        "onChapterEnter": [],
+        "onChapterExit": []
+    }
+]

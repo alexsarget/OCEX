@@ -12,7 +12,7 @@
         "percentNow": "Desconocido",
         "location": [
             {
-            "center": [-122.418398, 37.759483],
+            "center": [23.8928912,-89.6387471],
             "zoom": 8.5,
             "pitch": 60,
             "bearing": 0
@@ -37,7 +37,7 @@
         "percentNow": "8 000",
         "location": [
             {
-            "center": [-122.418398, 37.759483],
+            "center": [20.1424883,-90.8582112],
             "zoom": 8.5,
             "pitch": 60,
             "bearing": 0
@@ -62,7 +62,7 @@
         "percentNow": "20",
         "location": [
             {
-            "center": [-122.418398, 37.759483],
+            "center": [31.0963956,-114.0054637],
             "zoom": 8.5,
             "pitch": 60,
             "bearing": 0
@@ -112,7 +112,7 @@
         "percentNow": "20 000 - 30 000",
         "location": [
             {
-            "center": [-122.418398, 37.759483],
+            "center": [22.8885243,-94.5031216],
             "zoom": 8.5,
             "pitch": 60,
             "bearing": 0
@@ -137,7 +137,7 @@
         "percentNow": "10 000 - 12 000",
         "location": [
             {
-            "center": [-122.418398, 37.759483],
+            "center": [32.6145648,-127.3423556],
             "zoom": 8.5,
             "pitch": 60,
             "bearing": 0
@@ -162,7 +162,7 @@
         "percentNow": "Desconocido",
         "location": [
             {
-            "center": [-122.418398, 37.759483],
+            "center": [24.3681861,-95.5208855],
             "zoom": 8.5,
             "pitch": 60,
             "bearing": 0
@@ -187,7 +187,7 @@
         "percentNow": "",
         "location": [
             {
-            "center": [-122.418398, 37.759483],
+            "center": [27.4244964,-113.3582863],
             "zoom": 8.5,
             "pitch": 60,
             "bearing": 0
@@ -212,7 +212,7 @@
         "percentNow": "100",
         "location": [
             {
-            "center": [-122.418398, 37.759483],
+            "center": [-41.0880078,155.9777036],
             "zoom": 8.5,
             "pitch": 60,
             "bearing": 0
@@ -237,7 +237,7 @@
         "percentNow": "203 000",
         "location": [
             {
-            "center": [-122.418398, 37.759483],
+            "center": [22.9954637,-90.7767426],
             "zoom": 8.5,
             "pitch": 60,
             "bearing": 0

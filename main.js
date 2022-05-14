@@ -1,4 +1,4 @@
-mapboxgl.accessToken = 'token value';
+mapboxgl.accessToken = 'pk.eyJ1IjoiZXJpY2tka25pZ2h0IiwiYSI6ImNsMzR5MnBtYjAwZzUzaW9ibTg2dmVmZm0ifQ.0t-OOaupeo1KtAAkmxYcAQ';
 const start = [-103, 24];
 
 const map = new mapboxgl.Map({
@@ -35,22 +35,24 @@ const markersPrint=(valueMarkers)=>{
     let markers=valueMarkers
     for (const marker of markers) {
         // Create a DOM element for each marker.
-        console.log(marker)
+        let atajo=marker.location[0]
+        let coords=atajo.center;
+        
         const el = document.createElement('div');
         el.id='fly'
         el.className = 'marker';
-        el.style.backgroundImage = `url(${marker.img})`
+        el.style.backgroundImage = `url(${marker.image})`
         el.style.width = `60px`;
         el.style.height = `60px`;
         el.style.backgroundSize = '130%';
          
         el.addEventListener('click', () => {
-            fly(marker.coords);
+            fly(coords);
         });
          
         // Add markers to the map.
         new mapboxgl.Marker(el)
-        .setLngLat(marker.coords)
+        .setLngLat(coords)
         .addTo(map);
         }
     

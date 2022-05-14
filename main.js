@@ -11,7 +11,7 @@ zoom: 4.6
 
 const markersInfo=()=>{
     let marker=[];
-    fetch("./animals.json").then(function (resp) {
+    fetch("./animales.json").then(function (resp) {
         return resp.json();
     }).then(function (data){
         
@@ -24,7 +24,7 @@ const markersInfo=()=>{
         }
   
     })
-    return marker;
+    
 }
 
 
@@ -38,6 +38,9 @@ const markersPrint=(valueMarkers)=>{
         let atajo=marker.location[0]
         let coords=atajo.center;
         
+        fixcoords=[coords[1],coords[0]]
+        console.log(fixcoords)
+        
         const el = document.createElement('div');
         el.id='fly'
         el.className = 'marker';
@@ -47,16 +50,15 @@ const markersPrint=(valueMarkers)=>{
         el.style.backgroundSize = '130%';
          
         el.addEventListener('click', () => {
-            fly(coords);
+            fly(fixcoords);
         });
          
         // Add markers to the map.
         new mapboxgl.Marker(el)
-        .setLngLat(coords)
+        .setLngLat(fixcoords)
         .addTo(map);
         }
     
-        let isAtStart = true;
 }
 
 let isAtStart = true;
@@ -81,20 +83,29 @@ const fly =(coords)=>{
              
             essential: true
             });
+
+            document.getElementById("animalName").style.display="none";
     }else if(isAtStart==false) {
+
+        
+
         map.flyTo({
     
             center: end,
-            zoom: 9,
+            zoom: 6,
             bearing: 0,
              
             speed: 2, // make the flying slow
             curve: .5, // change the speed at which it zooms out
+
+            
              
             easing: (t) => t,
              
             essential: true
             });
+
+            document.getElementById("animalName").style.display="block";
     }
      
     
@@ -104,4 +115,20 @@ const fly =(coords)=>{
 
 const close=()=>{
     
+}
+
+let estado="open"
+
+function showHideSideBar(){
+
+    if(estado=="open"){
+        document.getElementById("sideBar").style.width="30px";
+        document.getElementById("intro").style.display="none";
+    estado="close";
+    }
+    else if(estado=="close"){
+        document.getElementById("sideBar").style.width="600px"; 
+        document.getElementById("intro").style.display="block";  
+    estado="open";
+    }
 }

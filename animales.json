@@ -1,5 +1,55 @@
 [
     {
+        "id": "totoaba",
+        "alignment": "left",
+        "hidden": false,
+        "title": "Totoaba",
+        "scientificName": "Totoaba macdonald",
+        "family": "Sciaenidae",
+        "image": "./path/to/image/source.png",
+        "description": "La totoaba es el pez más grande del Alto Golfo de California único en la región, actualmente esta especie se enfrenta a la pesca ilegal, ocasionando un decremento en su población de forma alarmante hasta acercarla peligrosamente a su casi extinción,",
+        "percent20years": "2 300",
+        "percentNow": "Desconocido",
+        "location": [
+            {
+            "center": [23.8928912,-89.6387471],
+            "zoom": 8.5,
+            "pitch": 60,
+            "bearing": 0
+            }
+        ],
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "callback": "",
+        "onChapterEnter": [],
+        "onChapterExit": []
+    }, 
+    {
+        "id": "tortugaCarey",
+        "alignment": "left",
+        "hidden": false,
+        "title": "Tortuga Carey",
+        "scientificName": "Eretmochelys imbricata",
+        "family": "Cheloniidae",
+        "image": "./path/to/image/source.png",
+        "description": "La cabeza cónica de la tortuga carey termina en una punta afilada, que se asemeja al pico de un ave, de allí su nombre en inglés hawksbill turtle (tortuga pico de halcón). Una característica bastante peculiar es un par de garras que adornan cada aleta. Las tortugas macho tienen garras más largas, colas más gruesas y coloraciones más brillantes que las hembras.",
+        "percent20years": "",
+        "percentNow": "8 000",
+        "location": [
+            {
+            "center": [20.1424883,-90.8582112],
+            "zoom": 8.5,
+            "pitch": 60,
+            "bearing": 0
+            }
+        ],
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "callback": "",
+        "onChapterEnter": [],
+        "onChapterExit": []
+    },
+    {
         "id": "VaquitaMarina",
         "alignment": "left",
         "hidden": false,
@@ -12,7 +62,7 @@
         "percentNow": "20",
         "location": [
             {
-            "center": [-122.418398, 37.759483],
+            "center": [31.0963956,-114.0054637],
             "zoom": 8.5,
             "pitch": 60,
             "bearing": 0
@@ -62,7 +112,7 @@
         "percentNow": "20 000 - 30 000",
         "location": [
             {
-            "center": [-122.418398, 37.759483],
+            "center": [22.8885243,-94.5031216],
             "zoom": 8.5,
             "pitch": 60,
             "bearing": 0
@@ -87,7 +137,7 @@
         "percentNow": "10 000 - 12 000",
         "location": [
             {
-            "center": [-122.418398, 37.759483],
+            "center": [32.6145648,-127.3423556],
             "zoom": 8.5,
             "pitch": 60,
             "bearing": 0
@@ -112,7 +162,7 @@
         "percentNow": "Desconocido",
         "location": [
             {
-            "center": [-122.418398, 37.759483],
+            "center": [24.3681861,-95.5208855],
             "zoom": 8.5,
             "pitch": 60,
             "bearing": 0
@@ -137,7 +187,7 @@
         "percentNow": "",
         "location": [
             {
-            "center": [-122.418398, 37.759483],
+            "center": [27.4244964,-113.3582863],
             "zoom": 8.5,
             "pitch": 60,
             "bearing": 0
@@ -162,7 +212,7 @@
         "percentNow": "100",
         "location": [
             {
-            "center": [-122.418398, 37.759483],
+            "center": [-41.0880078,155.9777036],
             "zoom": 8.5,
             "pitch": 60,
             "bearing": 0
@@ -187,7 +237,7 @@
         "percentNow": "203 000",
         "location": [
             {
-            "center": [-122.418398, 37.759483],
+            "center": [22.9954637,-90.7767426],
             "zoom": 8.5,
             "pitch": 60,
             "bearing": 0

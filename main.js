@@ -1,4 +1,4 @@
-mapboxgl.accessToken = 'pk.eyJ1IjoiZXJpY2tka25pZ2h0IiwiYSI6ImNsMzR5MnBtYjAwZzUzaW9ibTg2dmVmZm0ifQ.0t-OOaupeo1KtAAkmxYcAQ';
+mapboxgl.accessToken = 'token value';
 const start = [-103, 24];
 
 const map = new mapboxgl.Map({
@@ -27,30 +27,6 @@ const markersInfo=()=>{
     return marker;
 }
 
-const MarkersInfo2=[
-    {
-        "animal":"vaca marina",
-        "cientifico":"vacus marinus",
-        "coords":[-100, 20],
-        "img":"https://blog.dolphindiscovery.com.mx/wp-content/uploads/2021/07/datos-curiosos-vaquita-marina.jpg"
-
-    },
-    {
-        "animal":"tortuga",
-        "cientifico":"tortugutus",
-        "coords":[-95, 27],
-        "img":"https://wwflac.awsassets.panda.org/img/turtles_hero_563115.jpg"
-
-    },
-    {
-        "animal":"ballena jorobada",
-        "cientifico":"ballenutus",
-        "coords":[-114, 20],
-        "img":"https://t2.ea.ltmcdn.com/es/razas/6/4/7/ballena-jorobada_746_0_600.jpg"
-
-    }
-
-]
 
 const markers=markersInfo()
 console.log(markers)

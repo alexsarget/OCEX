@@ -1,5 +1,55 @@
 [
     {
+        "id": "totoaba",
+        "alignment": "left",
+        "hidden": false,
+        "title": "Totoaba",
+        "scientificName": "Totoaba macdonald",
+        "family": "Sciaenidae",
+        "image": "./path/to/image/source.png",
+        "description": "La totoaba es el pez más grande del Alto Golfo de California único en la región, actualmente esta especie se enfrenta a la pesca ilegal, ocasionando un decremento en su población de forma alarmante hasta acercarla peligrosamente a su casi extinción,",
+        "percent20years": "2 300",
+        "percentNow": "Desconocido",
+        "location": [
+            {
+            "center": [-122.418398, 37.759483],
+            "zoom": 8.5,
+            "pitch": 60,
+            "bearing": 0
+            }
+        ],
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "callback": "",
+        "onChapterEnter": [],
+        "onChapterExit": []
+    }, 
+    {
+        "id": "tortugaCarey",
+        "alignment": "left",
+        "hidden": false,
+        "title": "Tortuga Carey",
+        "scientificName": "Eretmochelys imbricata",
+        "family": "Cheloniidae",
+        "image": "./path/to/image/source.png",
+        "description": "La cabeza cónica de la tortuga carey termina en una punta afilada, que se asemeja al pico de un ave, de allí su nombre en inglés hawksbill turtle (tortuga pico de halcón). Una característica bastante peculiar es un par de garras que adornan cada aleta. Las tortugas macho tienen garras más largas, colas más gruesas y coloraciones más brillantes que las hembras.",
+        "percent20years": "",
+        "percentNow": "8 000",
+        "location": [
+            {
+            "center": [-122.418398, 37.759483],
+            "zoom": 8.5,
+            "pitch": 60,
+            "bearing": 0
+            }
+        ],
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "callback": "",
+        "onChapterEnter": [],
+        "onChapterExit": []
+    },
+    {
         "id": "VaquitaMarina",
         "alignment": "left",
         "hidden": false,

@@ -301,26 +301,29 @@ button {
 }
 
 #listOfAnimalNames {
-    display   : flex;
+    display        : flex !important;
     flex-direction : column;
-    justify-content :center;
-    position  : relative;
-    height    : 90%;
-    width     : 90%;
-    overflow  : hidden;
-    transition: 0.5s;
+    justify-content: center;
+    position       : relative;
+    height         : 90%;
+    width          : 90%;
+    overflow       : hidden;
+    transition     : 0.5s;
+
 }
 
 #listOfAnimalNames li {
     list-style-type: none;
-    color: var(--color_text);
+    color          : var(--color_text);
+    padding-bottom: 0.3rem
 }
 
 #listOfAnimalNames a {
+    padding-left: 0.5rem;
     text-decoration: none;
     font-size      : var(--font_size-h2);
     font-family    : var(--font_family-title);
-    color: var(--color_text);
+    color          : var(--color_text);
 }
 
 #animalText h1 {
@@ -343,17 +346,24 @@ button {
     /* color          : var(--color_second) */
 }
 
-
-
 .listButton {
+    top             : 0px;
+    position        : absolute;
+    right           : 0px;
     width           : 45px;
     height          : 45px;
-    position        : absolute;
-    top             : 0px;
-    right           : 0px;
-    background-color: rgba(00, 00, 00, 0.0);
+    border: 1px solid #047C99;
+    border-radius   : 0 18px 0 18px;
+    box-shadow      : -3px -3px 16px var(--color_shadow);
+    background-color: transparent;
 }
 
-.listButton img {
+.listButton:hover {
+    
+}
+
+.listButton i {
     width: 100%;
+    font-size: 1.4rem;
+    color: var(--color_third)
 }

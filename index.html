@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +8,84 @@
     <title>index</title>
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <!-- /FAVICONS/ -->
+    <link rel="apple-touch-icon" sizes="57x57" href="././assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="././assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="././assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="././assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="././assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="././assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="././assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="././assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="././assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="././assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="././assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="././assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="././assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="././assets/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="././assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#047C99">
+    <!-- /MAPBOX - CDN/ -->
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
 </head>
+
 <body>
 
-<nav>
-    links
-</nav>
-<div id="map"></div>
-<input type="checkbox" id="btn-menu">
-<aside>
-    <h1>Titulo de pagina</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est voluptas quis laborum magni labore quia, autem nihil minus pariatur odio. Eum laudantium doloremque aperiam qui? Labore ab rem maiores sed.</p>
-    <div class="triggerindex">
-        <label class="trigg" for="btn-menu">°°</label>
+    <nav>
+        links
+    </nav>
+
+    <div id="map"></div>
+
+
+
+    <section>
+        <div id="sideBar" class="sideBar">
+
+            <button class="showHide" href="javascript:void(0)" onclick="showHideSideBar()">
+                <i>icon</i>
+            </button>
+
+            <div id="intro">
+                <div class="container">
+                    <h1>titulo de pagina o logo</h1>
+                    <div id="texto-info">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda est iusto unde, quod
+                            doloribus molestiae? Quam ut reprehenderit officia consequatur labore dicta culpa totam.
+                            Perspiciatis quia eius alias unde dolorum.</p>
+                    </div>
+                    <button class="showHideB" href="javascript:void(0)" onclick="showHideSideBar()">
+                        <i>Empieza a explorar</i>
+                    </button>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+    <div class="menuAnimals" id="menuAnimals">
+        <ul id="listOfAnimalNames">
+
+        </ul>
+        <button class="listButton" href="javascript:void(0)" onclick="showHideLateral()">x</button>
     </div>
-    <label id="startexploring" for="btn-menu">Revisa mapa</label>
-</aside>
+
+    <div id="animalName">
+        <div id="animalText"></div>
+    </div>
+
+
 
 </body>
 <footer>
-    <script src="./script.js"></script>
+    <script src="./main.js"></script>
 
 </footer>
+
 </html>

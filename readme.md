@@ -24,7 +24,7 @@ graph TD
 - Azure
 
 ### 📚 ESTRUCTURA DE DIRECTORIOS
-![OCEX](https://user-images.githubusercontent.com/91100184/168481805-18c9e3d2-1b60-45d1-98b6-1549b6ef3db0.jpg)
+![OCEX](https://user-images.githubusercontent.com/53270727/168499982-663b2aa5-520c-44fb-97c2-1fd3f329b03a.jpg)
 
 
 ## 🌐 ENLACE DEL PROYECTO

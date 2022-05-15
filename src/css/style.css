@@ -42,7 +42,7 @@ D. RESPONSIVE
 /*-- VARIABLES CSS --*/
 :root {
     /*-- /Font Family --*/
-    --font_family-body: font-family: 'Dosis', sans-serif;
+    --font_family-body: 'Dosis', sans-serif !important;
     ;
     --font_family-title: ;
 

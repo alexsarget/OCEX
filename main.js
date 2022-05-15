@@ -99,7 +99,7 @@ const fly =(locationCoords, nombre, nombrecientifico)=>{
             let scientific=`${nombrecientifico}`
 
             const container=document.getElementById("animalText");
-            container.innerHTML=`<h1>${title}</h1><p>${scientific}<a href="www.google.com">Ver info</a></p>`;
+            container.innerHTML=`<h1>${title}</h1><p>${scientific}   <a href="www.google.com">Ver info</a></p>`;
 
     };
 
@@ -158,14 +158,16 @@ let estadoLat="open";
 function showHideLateral(){
 
     if(estadoLat=="open"){
-        document.getElementById("menuAnimals").style.width="30px";
-        document.getElementById("menuAnimals").style.left="0px";
+        document.getElementById("menuAnimals").style.width="45px";
+        document.getElementById("menuAnimals").style.left="2px";
+        document.getElementById("menuAnimals").style.border="0px solid #000000";
         document.getElementById("listOfAnimalNames").style.display="none";
         estadoLat="close";
     }
     else if(estadoLat=="close"){
         document.getElementById("menuAnimals").style.width="300px"; 
         document.getElementById("menuAnimals").style.left="5%";
+        document.getElementById("menuAnimals").style.border="3px solid var(--color_second)";
         document.getElementById("listOfAnimalNames").style.display="block";  
         estadoLat="open";
     }

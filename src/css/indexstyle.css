@@ -30,12 +30,12 @@ D. RESPONSIVE
 
 /*----------  START SUBSECTION | ROOT  ----------*/
 /*-- GOOGLE FONTS --*/
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;800&display=swap');
 
 /*-- VARIABLES CSS --*/
 :root {
     /*-- /Font Family --*/
-    --font_family-body: font-family: 'Dosis', sans-serif;
+    --font_family-body: 'Dosis', sans-serif !important;
     ;
     --font_family-title: ;
 
@@ -99,7 +99,7 @@ D. RESPONSIVE
 body {
     margin     : 0;
     padding    : 0;
-    font-family: var(--font_family-body);
+    font-family: var(--font_family-body) !important;
 }
 
 a,
@@ -117,6 +117,15 @@ h4 {
 }
 
 
+/*============ FOOTER SECTION |  A. Global  =========*/
+
+
+/*=============================================
+=  START SECTION | B. HTML ELEMENTS STYLING   =
+=============================================*/
+
+/*----------  START SUBSECTION | REUSABLE CSS CLASSES & IDs   ----------*/
+
 #map { position: absolute; 
     top: 0; 
     bottom: 0; 
@@ -129,6 +138,7 @@ h4 {
     border-radius: 50%;
     cursor: pointer;
     padding: 0;
+    border: 4px solid var(--color_first);
     }
 #intro{
     position: relative;
@@ -183,7 +193,7 @@ h4 {
     border-radius: 20px;
     border-color: rgba(00, 00, 00, 0.0);
 
-    font-size: var(--font_size-big);
+    font-size: var(--font_size-h2);
 }
 
 .sideBar{
@@ -203,52 +213,86 @@ h4 {
 }
 
 #animalName{
-    background-color: var(--primary-color);
+    background-color: var(--color_first);
     position: absolute;
     bottom: 100px;
     right: 100px;
     width:40%; 
     height:100px;
-    color:aliceblue;
+    
     display: none;
 
     transition: 5s;
     overflow:hidden;
+
+    border-radius: 25px 25px 80px 25px;
+    padding-left: 40px;
+    padding-top: 0px;
 }
 
 .menuAnimals{
     position: fixed;
-    background-color: var(--primary-color);
+    background-color: var(--color_first);
     width:300px;
     height: 550px;
 
-    top: 10%;
+    top: 13%;
     left: 5%;
 
-    color: aliceblue;
+    color:var(--color_fourth);
+    border-radius:10px;
+    border: 3px solid var(--color_second);
 
     overflow:hidden;
     transition: 0.5s;
     display:none;
 }
+#animalText h1{
+    color: var(--color_second);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: var(--font_family-body);
+}
+
+#animalText p{
+    color: var(--color_fourth);
+    font-family: var(--font_family-body);
+    font-size: var(--font_size-h3);
+    margin-top: 0px;;
+}
+#animalText a{
+    text-decoration: none;
+    color: var(--color_second)
+}
 
 #listOfAnimalNames{
     position: relative;
-    background-color:midnightblue;
+    
     height: 90%;
     width:90%;
     overflow: hidden;
     transition: 0.5s;
     display:block;
 }
+#listOfAnimalNames a{
+    text-decoration: none;
+    font-size: var(--font_size-h2);
+    font-family: var(--font_family-title);
+    
+}
 
 .listButton{
-    width:20px;
-    height:20px;
+    width:45px;
+    height:45px;
 
     position: absolute;
 
     top: 0px;
     right: 0px;
+
+    background-color: rgba(00, 00, 00, 0.0);
+}
+.listButton img{
+    width: 100%;
 }
  

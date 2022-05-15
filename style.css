@@ -209,11 +209,15 @@ h4 {
     right: 100px;
     width:40%; 
     height:100px;
-    color:aliceblue;
+    
     display: none;
 
     transition: 5s;
     overflow:hidden;
+
+    border-radius: 25px 25px 80px 25px;
+    padding-left: 40px;
+    padding-top: 0px;
 }
 
 .menuAnimals{
@@ -233,7 +237,18 @@ h4 {
     transition: 0.5s;
     display:none;
 }
+#animalText h1{
+    color: var(--color_second);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: var(--font_family-body);
+}
 
+#animalText p{
+    color: var(--color_fourth);
+    font-family: var(--font_family-body);
+    font-size: var(--font_size-h3);
+}
 
 #listOfAnimalNames{
     position: relative;

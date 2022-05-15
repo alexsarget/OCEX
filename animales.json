@@ -25,7 +25,7 @@
         "onChapterExit": []
     }, 
     {
-        "id": "tortugaCarey",
+        "id": "tortugacarey",
         "alignment": "left",
         "hidden": false,
         "title": "Tortuga Carey",
@@ -50,7 +50,7 @@
         "onChapterExit": []
     },
     {
-        "id": "VaquitaMarina",
+        "id": "vaquitamarina",
         "alignment": "left",
         "hidden": false,
         "title": "Vaquita Marina",
@@ -75,7 +75,7 @@
         "onChapterExit": []
     }, 
     {
-        "id": "BallenaAzul",
+        "id": "ballenaazul",
         "alignment": "left",
         "hidden": false,
         "title": "Ballena Azul",
@@ -100,7 +100,7 @@
         "onChapterExit": []
     },
     {
-        "id": "TortugaLora",
+        "id": "tortugalora",
         "alignment": "left",
         "hidden": false,
         "title": "Tortuga Lora",
@@ -125,7 +125,7 @@
         "onChapterExit": []
     },
     {
-        "id": "LeonMarinoSteller",
+        "id": "leonmarinosteller",
         "alignment": "left",
         "hidden": false,
         "title": "Leon Marino Steller",
@@ -150,7 +150,7 @@
         "onChapterExit": []
     },
     {
-        "id": "TiburonMartilloGigante",
+        "id": "tiburonmartillogigante",
         "alignment": "left",
         "hidden": false,
         "title": "Tiburon Martillo Gigante",
@@ -175,7 +175,7 @@
         "onChapterExit": []
     },
     {
-        "id": "RorcualComun",
+        "id": "rorcualcomun",
         "alignment": "left",
         "hidden": false,
         "title": "Rorcual Comun",
@@ -200,7 +200,7 @@
         "onChapterExit": []
     },
     {
-        "id": "DelfinCabezaBlanca",
+        "id": "delfincabezablanca",
         "alignment": "left",
         "hidden": false,
         "title": "Delfin Cabeza Blanca",
@@ -225,7 +225,7 @@
         "onChapterExit": []
     },
     {
-        "id": "TortugVerde",
+        "id": "tortugaverde",
         "alignment": "left",
         "hidden": false,
         "title": "Tortuga Verde",

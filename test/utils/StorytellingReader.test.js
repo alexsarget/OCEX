@@ -1,6 +1,6 @@
 
 
-describe('Pruebas de Reader Storyscroll', () {
+describe('Pruebas de Reader Storyscroll', () => {
     describe('1. Test de prubea', () => {
         const Reader = "Soy el Test";
 

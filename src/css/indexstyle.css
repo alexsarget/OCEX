@@ -118,7 +118,7 @@ h4 {
 }
 
 button {
-    cursor: pointer;
+    cursor    : pointer;
     transition: .3s ease-in-out;
 }
 
@@ -187,21 +187,22 @@ button {
 }
 
 .showHide img {
-    height  : 100%;
-    position: absolute;
-    top     : 0px;
-    left    : 0px;
+    height    : 100%;
+    position  : absolute;
+    top       : 0px;
+    left      : 0px;
     transition: .3s ease-in-out;
 }
 
 .showHide img:hover {
-    transform: scale(.8);    
+    transform: scale(.8);
 }
 
 .sideBar {
     position        : fixed;
     top             : 5%;
     left            : 0;
+    border          : 1px solid var(--color_second);
     border-radius   : 0 20px 20px 0;
     background-color: #FFF;
     width           : 600px;
@@ -285,18 +286,41 @@ button {
 }
 
 .menuAnimals {
+    display         : none;
     position        : fixed;
-    background-color: var(--color_first);
-    width           : 300px;
-    height          : 550px;
     top             : 13%;
     left            : 5%;
+    border          : 1px solid var(--color_second);
+    border-radius   : 20px;
+    background-color: #FFF;
+    width           : 300px;
+    height          : 550px;
     color           : var(--color_fourth);
-    border-radius   : 10px;
-    border          : 3px solid var(--color_second);
     overflow        : hidden;
     transition      : 0.5s;
-    display         : none;
+}
+
+#listOfAnimalNames {
+    display   : flex;
+    flex-direction : column;
+    justify-content :center;
+    position  : relative;
+    height    : 90%;
+    width     : 90%;
+    overflow  : hidden;
+    transition: 0.5s;
+}
+
+#listOfAnimalNames li {
+    list-style-type: none;
+    color: var(--color_text);
+}
+
+#listOfAnimalNames a {
+    text-decoration: none;
+    font-size      : var(--font_size-h2);
+    font-family    : var(--font_family-title);
+    color: var(--color_text);
 }
 
 #animalText h1 {
@@ -319,21 +343,7 @@ button {
     /* color          : var(--color_second) */
 }
 
-#listOfAnimalNames {
-    position  : relative;
-    height    : 90%;
-    width     : 90%;
-    overflow  : hidden;
-    transition: 0.5s;
-    display   : block;
-}
 
-#listOfAnimalNames a {
-    text-decoration: none;
-    font-size      : var(--font_size-h2);
-    font-family    : var(--font_family-title);
-
-}
 
 .listButton {
     width           : 45px;

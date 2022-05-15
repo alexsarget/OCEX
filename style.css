@@ -183,7 +183,7 @@ h4 {
     border-radius: 20px;
     border-color: rgba(00, 00, 00, 0.0);
 
-    font-size: var(--font_size-big);
+    font-size: var(--font_size-h2);
 }
 
 .sideBar{
@@ -203,7 +203,7 @@ h4 {
 }
 
 #animalName{
-    background-color: var(--primary-color);
+    background-color: var(--color_first);
     position: absolute;
     bottom: 100px;
     right: 100px;
@@ -218,37 +218,51 @@ h4 {
 
 .menuAnimals{
     position: fixed;
-    background-color: var(--primary-color);
+    background-color: var(--color_first);
     width:300px;
     height: 550px;
 
-    top: 10%;
+    top: 13%;
     left: 5%;
 
-    color: aliceblue;
+    color:var(--color_fourth);
+    border-radius:10px;
+    border: 3px solid var(--color_second);
 
     overflow:hidden;
     transition: 0.5s;
     display:none;
 }
 
+
 #listOfAnimalNames{
     position: relative;
-    background-color:midnightblue;
+    
     height: 90%;
     width:90%;
     overflow: hidden;
     transition: 0.5s;
     display:block;
 }
+#listOfAnimalNames a{
+    text-decoration: none;
+    font-size: var(--font_size-h2);
+    font-family: var(--font_family-title);
+    
+}
 
 .listButton{
-    width:20px;
-    height:20px;
+    width:45px;
+    height:45px;
 
     position: absolute;
 
     top: 0px;
     right: 0px;
+
+    background-color: rgba(00, 00, 00, 0.0);
+}
+.listButton img{
+    width: 100%;
 }
  

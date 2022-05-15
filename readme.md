@@ -37,4 +37,3 @@ graph TD
 | `👨🏻 2. Emmanuel Hernández`        |  📎 [Link a Github](https://github.com/antoni-codes)   |
 | `👨🏻 3. Alejandro Aguilar`         |  📎 [Link a Github](https://github.com/alexsarget)     |
 | `👨🏻 4. Erick Montes`              |  📎 [Link a Github](https://github.com/ErickMontesDK)  |
-| `👨🏻 5. José Anaya`                |  📎 [Link a Github](https://github.com)                |

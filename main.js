@@ -122,7 +122,7 @@ function showHideSideBar(){
         document.getElementById("sideBar").style.width="600px"; 
         document.getElementById("intro").style.display="block";  
         document.getElementById("menuAnimals").style.display="none";
-        document.getElementById("listOfAnimalNames").style.display="none";
+        
     estado="open";
     }
 }

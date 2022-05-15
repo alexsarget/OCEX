@@ -1,5 +1,10 @@
 # 🐋 OCEX ENCICLOPEDIA | HACK THE OCEAN | HACKATON DE LAUNCHX 🐟
 
+## 🦀 DESCRIPCIÓN
+
+
+## 🌐 ENLACE DEL PROYECTO
+
 ## 📖 INTEGRANTES 
 
 | NOMBRE(S)                         |                             Links a Githubs Personales |

@@ -313,10 +313,14 @@ button {
 
 #listOfAnimalNames li {
     list-style-type: none;
-    color          : var(--color_text);
+    color          : var(--color_second);
     padding-left   : 0rem;
     padding-bottom : 0.3rem;
     transition     : .2s ease-in-out;
+}
+
+#listOfAnimalNames li:hover {
+    color: var(--color_third);
 }
 
 #listOfAnimalNames a {
@@ -326,10 +330,6 @@ button {
     font-family    : var(--font_family-title);
     color          : var(--color_text);
     transition     : .2s ease-in-out;
-}
-
-#listOfAnimalNames li:hover {
-    color: var(--color_second);
 }
 
 #listOfAnimalNames a:hover {

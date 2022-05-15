@@ -292,6 +292,7 @@ button {
     left            : 5%;
     border-radius   : 20px;
     background-color: #FFF;
+    border          : 1px solid var(--color_second);
     width           : 300px;
     height          : 550px;
     color           : var(--color_fourth);

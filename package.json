@@ -4,7 +4,10 @@
   "description": "| NOMBRE(S)                         |                             Links a Githubs Personales |\r | --------------------------------  | ---------------------------------------------------:   |\r | `👩 1. Flor Nepomuceno`           |  📎 [Link a Github](https://github.com/FlorNepomuceno) |\r | `👨 2. Emmanuel Hernández`        |  📎 [Link a Github](https://github.com/antoni-codes)   |\r | `👨🏻 3. Alejandro Aguilar`         |  📎 [Link a Github](https://github.com/alexsarget)     |\r | `👨🏻 4. Erick Montes`              |  📎 [Link a Github](https://github.com/ErickMontesDK)  |\r | `👨🏻 5. José Anaya`                |  📎 [Link a Github](https://github.com)                |",
   "main": "script.js",
   "scripts": {
-    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest"
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest",
+    "linter": "node --experimental-vm-modules ./node_modules/eslint/bin/eslint.js",
+    "linter-fix": "node --experimental-vm-modules ./node_modules/eslint/bin/eslint.js --fix",
+    "server": "node ./lib/server.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +30,11 @@
     "ocean"
   ],
   "devDependencies": {
+    "eslint": "^8.15.0",
     "jest": "^28.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1"
   }
 }

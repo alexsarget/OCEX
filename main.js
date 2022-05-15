@@ -133,7 +133,7 @@ const listAnimals = (index, title) => {
     const ListContainer = document.getElementById("listOfAnimalNames")
 
     const LiElement = document.createElement("li");
-    LiElement.innerHTML = `<a href="#" onclick="animalLiFunction(${index})">${title}</a>`;
+    LiElement.innerHTML = `<i class="fa-solid fa-fish-fins"></i> <a href="#" onclick="animalLiFunction(${index})">${title}</a>`;
 
     ListContainer.appendChild(LiElement);
 }

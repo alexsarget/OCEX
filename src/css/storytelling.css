@@ -1,0 +1,361 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:         OCEX | HACK THE OCEAN | HACKATON 
+
+Author:          Equipo Launch X
+Website:         link
+First Color:     #051426;
+Second Color:    #047C99;
+Third Color:     #ddb01c;
+Fourth Color:    #b8f7ff; 
+text Color:     #051426;        
+Version:         1.0
+main-font:       'Dosis', sans-serif;
+Headers:         
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+A. GLOBAL
+    1. GOOGLE FONTS
+    2. ROOT
+
+B. HTML ELEMENTS STYLING
+
+C. SECTIONS (CUSTOM CLASSES & IDs)
+
+D. RESPONSIVE
+-------------------------------------------------------------------*/
+
+
+/*=============================================
+=         START SECTION | A. GLOBAL           =
+=============================================*/
+
+/*----------  START SUBSECTION | ROOT  ----------*/
+/*-- GOOGLE FONTS --*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+/*-- VARIABLES CSS --*/
+:root {
+    /*-- /Font Family --*/
+    --font_family-body: font-family: 'Dosis', sans-serif;
+    ;
+    --font_family-title: ;
+
+    /*-- /Font Sizes --*/
+    --font_size-h1     : 1.5em;
+    --font_size-h2     : 1.35em;
+    --font_size-h3     : 1.2em;
+    --font_size-biggest: 2em;
+    --font_size-big    : 1.5em;
+    --font_size-normal : 1em;
+    --font_size-small  : .813em;
+    --font_size-smaller: .75em;
+
+    /*-- /Font Weight/ --*/
+    --font_weight-bolder  : 900;
+    --font_weight-semibold: 600;
+    --font_weight-medium  : 500;
+
+    /*-- /Colors/ --*/
+    --color_first : #051426;
+    --color_second: #047C99;
+    --color_third : #ddb01c;
+    --color_fourth: #b8f7ff;
+    --color_text  : #051426;
+
+    /*-- /Background Colors/ --*/
+    --color_body     : ;
+    --color_container: ;
+
+    /*-- /Margins/ --*/
+    --mrl_1_5: 1.5rem;
+    --mb_2_5 : 2.5rem;
+    --mb_2   : 2rem;
+    --mb_1_5 : 1.5rem;
+    --mb_1   : 1rem;
+    --mb_0-75: .75rem;
+    --mb_0-25: .25rem;
+    --mb_0-5 : .5rem;
+
+    /*-- /Z-Index/ --*/
+    --z-behind : -10;
+    --z-tooltip: 10;
+    --z-fixed  : 100;
+}
+
+/*-- RESPONSIVE TIPOGRAPHY --*/
+@media screen and (min-width: 992px) {
+    :root {
+        --font_size-h1     : 2.25em;
+        --font_size-h2     : 1.5em;
+        --font_size-h3     : 1.25em;
+        --font_size-biggest: 4em;
+        --font_size-big    : 2.5em;
+        --font_size-normal : 1em;
+        --font_size-small  : .875em;
+        --font_size-smaller: .813em;
+    }
+}
+
+/*----------  START SUBSECTION | GLOBAL STYLES   ----------*/
+body {
+    margin     : 0;
+    padding    : 0;
+    font-family: var(--font_family-body);
+}
+
+a,
+a:hover,
+a:visited {
+    color: #0071bc;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    color: var(--color_text);
+}
+
+
+/*============ FOOTER SECTION |  A. Global  =========*/
+
+
+/*=============================================
+=  START SECTION | B. HTML ELEMENTS STYLING   =
+=============================================*/
+
+/*----------  START SUBSECTION | REUSABLE CSS CLASSES & IDs   ----------*/
+#map {
+    top     : 0;
+    height  : 100vh;
+    width   : 100vw;
+    position: fixed;
+}
+
+#mapInset {
+    bottom        : 50px;
+    right         : 30px;
+    height        : 180px;
+    width         : 250px;
+    max-width     : 100%;
+    position      : fixed;
+    z-index       : 1;
+    opacity       : 1;
+    transition    : opacity 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+#header {
+    margin  : auto;
+    width   : 100%;
+    position: relative;
+    z-index : 5;
+}
+
+#header h1,
+#header h2,
+#header p {
+    margin    : 0;
+    padding   : 2vh 2vw;
+    text-align: center;
+}
+
+#footer {
+    width         : 100%;
+    min-height    : 5vh;
+    padding-top   : 2vh;
+    padding-bottom: 2vh;
+    text-align    : center;
+    line-height   : 25px;
+    font-size     : 13px;
+    position      : relative;
+    z-index       : 5;
+}
+
+#features {
+    padding-top   : 10vh;
+    padding-bottom: 10vh;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.centered {
+    width : 50vw;
+    margin: 0 auto;
+}
+
+.lefty {
+    width      : 33vw;
+    margin-left: 5vw;
+}
+
+.righty {
+    width      : 33vw;
+    margin-left: 62vw;
+}
+
+.fully {
+    width : 100%;
+    margin: auto;
+}
+
+.light {
+    position        : relative;
+    color           : #444;
+    background-color: #fafafa;
+    border-radius   : 25px;
+}
+
+
+
+.dark {
+    color           : #fafafa;
+    background-color: #444;
+}
+
+.step {
+    padding-bottom  : 50vh;
+    /* margin-bottom: 10vh; */
+    opacity         : 0.25;
+}
+
+.step.active {
+    opacity: 0.9;
+}
+
+.step div {
+    max-width    : 20rem;
+    font-size    : 13px;
+    border-radius: 20px;
+}
+
+.step img {
+    width        : 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.step .card__description-text {
+    position        : relative;
+    top             : -3rem;
+    align-items     : center;
+    padding         : 2rem 0 0 0;
+    border-radius   : 40px 40px 20px 20px;
+    background-color: #FFF;
+}
+
+.step h3,
+.step p {
+    padding    : 0px 20px;
+    line-height: 0;
+}
+
+.step h3 {
+    color         : var();
+    font-size     : var(--font_size-h2);
+    font-weight   : var(--font_weight-bolder);
+    padding-bottom: 0.05rem;
+}
+
+.step .card__description-headtitle {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.step .head__title-status {
+    font-size  : var(--font_size-normal);
+    font-weight: var(--font_weight-medium);
+    color      : var(--color_third);
+}
+
+.step .card__description-scientificname {
+    margin-bottom: 2rem;
+}
+
+.step .card__description-family {
+    font-size  : var(--font_size-h3);
+    font-weight: var(--font_weight-semibold);
+}
+
+.step .card__description-family-subtitle {
+    font-size     : var(--font_size-small);
+    padding-bottom: 0.8rem;
+}
+
+.step .card__description {
+    line-height   : 1rem;
+    padding-bottom: 0.8rem;
+}
+
+.step .card__buttons {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-around;
+}
+
+.step .card__description-button {
+    width        : 6rem;
+    margin       : 0 1rem;
+    border-radius: 10px;
+    padding      : 1.5rem 0.5rem;
+    background   : var(--color_first) !important;
+    color        : #FFF;
+    text-align   : center;
+    font-size    : 2.3em;
+}
+
+.step .card__description-button.right {
+    background: var(--color_second) !important;
+}
+
+.step .card__description-buttons_titles {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-around;
+
+}
+
+.step .button__title {
+    font-size  : var(--font_size-small);
+    font-weight: var(--font_weight-semibold);
+    text-align : center;
+}
+
+.step .button__title-right {}
+
+
+@media (max-width: 750px) {
+
+    .centered,
+    .lefty,
+    .righty,
+    .fully {
+        width : 90vw;
+        margin: 0 auto;
+    }
+}
+
+/* Fix issue on mobile browser where scroll breaks  */
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
+    touch-action: unset;
+}
+
+.card__img {
+    max-width: 100%;
+
+}
+
+.mapboxgl-ctrl-attrib-inner,
+.mapboxgl-ctrl-bottom-left {
+    display: none;
+}

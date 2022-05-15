@@ -60,6 +60,7 @@ D. RESPONSIVE
     --color_third : #ddb01c;
     --color_fourth: #b8f7ff;
     --color_text  : #051426;
+    --color_shadow: #05142636;
 
     /*-- /Background Colors/ --*/
     --color_body     : ;
@@ -116,14 +117,11 @@ h4 {
     color: var(--color_text);
 }
 
-nav li{
-    display:inline-block;
-    width:10%;
-    padding:5px 10px;
-    text-align:center;
-    font-family: var(--font_family-body) !important;
-    color: azure;
-    }
+button {
+    cursor    : pointer;
+    transition: .3s ease-in-out;
+}
+
 /*============ FOOTER SECTION |  A. Global  =========*/
 
 
@@ -133,187 +131,256 @@ nav li{
 
 /*----------  START SUBSECTION | REUSABLE CSS CLASSES & IDs   ----------*/
 
-#map { position: absolute; 
-    top: 0; 
-    bottom: 0; 
-    height: 100%;
-    width: 100%; }
+#map {
+    position: absolute;
+    top     : 0;
+    bottom  : 0;
+    height  : 100%;
+    width   : 100%;
+}
 
 .marker {
-    display: block;
-    border: none;
+    display      : block;
+    border       : none;
     border-radius: 50%;
-    cursor: pointer;
-    padding: 0;
+    cursor       : pointer;
+    padding      : 0;
 
-    animation-name:fading;
-    animation-duration: 2.5s;
-    animation-timing-function:ease-out;
+    animation-name           : fading;
+    animation-duration       : 2.5s;
+    animation-timing-function: ease-out;
     animation-iteration-count: infinite;
-    animation-delay: 0s;
-    }
+    animation-delay          : 0s;
+}
+
 @keyframes fading {
-    0%{border:0px solid rgba(00, 00, 00, 0.0)}
-    50%{border: 8px solid var(--color_first);}
-    100%{border:0px solid rgba(00, 00, 00, 0.0)}
+    0% {
+        border: 0px solid rgba(00, 00, 00, 0.0)
+    }
+
+    50% {
+        border: 8px solid var(--color_first);
+    }
+
+    100% {
+        border: 0px solid rgba(00, 00, 00, 0.0)
+    }
 }
 
-
-#intro{
-    position: relative;
-    background-color:var(--color_second);
-    height: 90%;
-    width:90%;
-    overflow: hidden;
-    transition: 0.5s;
-    display:block;
-
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 30px;
-
-    visibility: visible;
-}
-
-.container{
-    display:flex;
+.container {
+    display       : flex;
     flex-direction: column;
-    align-items: center;
+    align-items   : center;
 }
 
-.container img{
-    width:200px;  
-}
-.texto-info{
-    width:90%;
-    margin-top: 15px;
+.container img {
+    width: 200px;
 }
 
-
-.showHide{
-    position: absolute;
-    top: 10px;
-    right: 2px;
-    width: 45px;
-    height: 45px;
+.showHide {
+    position     : absolute;
+    top          : 10px;
+    right        : 4px;
+    width        : 45px;
+    height       : 45px;
     border-radius: 50%;
 }
-.showHide img{
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+
+.showHide img {
+    height    : 100%;
+    position  : absolute;
+    top       : 0px;
+    left      : 0px;
+    transition: .3s ease-in-out;
 }
 
-.showHideB{
-    position: absolute;
-    width:400px;
-    height: 80px;
-    bottom:10px;  
-    
+.showHide img:hover {
+    transform: scale(.8);
+}
+
+.sideBar {
+    position        : fixed;
+    top             : 5%;
+    left            : 0;
+    border          : 1px solid var(--color_second);
+    border-radius   : 0 20px 20px 0;
+    background-color: #FFF;
+    width           : 600px;
+    height          : 90%;
+    overflow        : hidden;
+    transition      : 0.5s;
+}
+
+#intro {
+    display                      : block;
+    position                     : relative;
+    height                       : 93%;
+    width                        : 90%;
+    box-shadow                   : 8px 8px 16px var(--color_shadow);
+    background-color             : var(--color_second);
+    /* border-top-right-radius   : 10px; */
+    border-bottom-right-radius   : 20px;
+    visibility                   : visible;
+    transition                   : 0.5s;
+    overflow                     : hidden;
+}
+
+.sidebar__img {
+    width  : 30% !important;
+    padding: 2rem 0 2rem 0;
+}
+
+.texto-info {
+    width    : 90%;
+    font-size: 1.1em;
+}
+
+.texto-info p {
+    margin     : 0 2rem;
+    color      : #FFF !important;
+    font-weight: var(--font_weight-medium);
+
+}
+
+.showHideB {
+    position        : absolute;
+    bottom          : 10px;
+    margin-bottom   : 2rem;
+    border-radius   : 10px;
+    border-color    : rgba(00, 00, 00, 0.0);
+    border          : 1px solid transparent;
+    padding         : 1rem 5rem;
+    box-shadow      : 0px 0px 16px var(--color_shadow);
     background-color: var(--color_fourth);
-    border-radius: 20px;
-    border-color: rgba(00, 00, 00, 0.0);
-
-    font-size: var(--font_size-h2);
+    font-family     : var(--font_family-body);
+    letter-spacing  : 0.2em;
+    font-size       : var(--font_size-h3);
+    font-weight     : var(--font_weight-bolder);
+    text-transform  : uppercase;
+    transition      : .3s ease-in-out;
 }
 
-.sideBar{
-    position:fixed;
+.showHideB:hover {
+    background: transparent;
+    border    : 1px solid #FFF;
+    color     : #FFF;
+}
+
+.showHideB i {
+    font-style: normal !important;
+}
+
+#animalName {
     background-color: var(--color_first);
-    
-    width:600px;
-    height:90%;
-
-    border-right: 3px solid rgba(9, 202, 255, 0.3);
-    padding: 0 10px;
-    top:5%;
-    left:0;
-
-    overflow:hidden;
-    transition: 0.5s;
+    position        : absolute;
+    bottom          : 100px;
+    right           : 100px;
+    width           : 40%;
+    height          : 100px;
+    display         : none;
+    transition      : 5s;
+    overflow        : hidden;
+    border-radius   : 25px 25px 80px 25px;
+    padding-left    : 40px;
+    padding-top     : 0px;
 }
 
-#animalName{
-    background-color: var(--color_first);
-    position: absolute;
-    bottom: 100px;
-    right: 100px;
-    width:40%; 
-    height:100px;
-    
-    display: none;
-
-    transition: 5s;
-    overflow:hidden;
-
-    border-radius: 25px 25px 80px 25px;
-    padding-left: 40px;
-    padding-top: 0px;
+#menuAnimals {
+    display         : none;
+    position        : fixed;
+    top             : 14%;
+    left            : 5%;
+    border-radius   : 20px;
+    background-color: #FFF;
+    border          : 1px solid var(--color_second);
+    width           : 300px;
+    height          : 530px;
+    color           : var(--color_fourth);
+    overflow        : hidden;
+    transition      : 0.5s;
 }
 
-.menuAnimals{
-    position: fixed;
-    background-color: var(--color_first);
-    width:300px;
-    height: 550px;
-
-    top: 13%;
-    left: 5%;
-
-    color:var(--color_fourth);
-    border-radius:10px;
-    border: 3px solid var(--color_second);
-
-    overflow:hidden;
-    transition: 0.5s;
-    display:none;
+#listOfAnimalNames {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    position       : relative;
+    height         : 90%;
+    width          : 90%;
+    overflow       : hidden;
+    transition     : 0.5s;
 }
-#animalText h1{
-    color: var(--color_second);
-    margin-top: 5px;
+
+#listOfAnimalNames li {
+    list-style-type: none;
+    color          : var(--color_second);
+    padding-left   : 0rem;
+    padding-bottom : 0.3rem;
+    transition     : .2s ease-in-out;
+}
+
+#listOfAnimalNames li:hover {
+    color: var(--color_third);
+}
+
+#listOfAnimalNames a {
+    padding-left   : 0.5rem;
+    text-decoration: none;
+    font-size      : var(--font_size-h2);
+    font-family    : var(--font_family-title);
+    color          : var(--color_text);
+    transition     : .2s ease-in-out;
+}
+
+#listOfAnimalNames a:hover {
+    color: var(--color_third);
+}
+
+#animalText h1 {
+    color        : var(--color_second);
+    margin-top   : 5px;
     margin-bottom: 5px;
+    font-family  : var(--font_family-body);
+}
+
+#animalText p {
+    color      : var(--color_fourth);
     font-family: var(--font_family-body);
+    font-size  : var(--font_size-h3);
+    margin-top : 0px;
+    ;
 }
 
-#animalText p{
-    color: var(--color_fourth);
-    font-family: var(--font_family-body);
-    font-size: var(--font_size-h3);
-    margin-top: 0px;;
-}
-#animalText a{
-    text-decoration: none;
-    color: var(--color_second)
+#animalText a {
+    text-decoration   : none;
+    /* color          : var(--color_second) */
 }
 
-#listOfAnimalNames{
-    position: relative;
-    
-    height: 90%;
-    width:90%;
-    overflow: hidden;
-    transition: 0.5s;
-    display:block;
-}
-#listOfAnimalNames a{
-    text-decoration: none;
-    font-size: var(--font_size-h2);
-    font-family: var(--font_family-title);
-    
+#listButton {
+    top             : 0px;
+    position        : absolute;
+    right           : 0px;
+    width           : 45px;
+    height          : 45px;
+    border          : 1px solid #fff;
+    border-radius   : 0 18px 0 18px;
+    box-shadow      : -3px -3px 16px var(--color_shadow);
+    background-color: transparent;
+    transition      : .3s ease-in-out;
 }
 
-.listButton{
-    width:45px;
-    height:45px;
-
-    position: absolute;
-
-    top: 0px;
-    right: 0px;
-
-    background-color: rgba(00, 00, 00, 0.0);
-}
-.listButton img{
-    width: 100%;
+#listButton:hover {
+    border    : 1px solid #FFF;
+    background: var(--color_second);
 }
 
+.listButton i {
+    width     : 100%;
+    font-size : 1.4rem;
+    color     : var(--color_first);
+    transition: .3s ease-in-out;
+}
+
+.listButton:hover i {
+    color: #FFF;
+}

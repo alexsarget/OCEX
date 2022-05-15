@@ -113,7 +113,7 @@ let estado = "open"
 function showHideSideBar() {
 
     if (estado == "open") {
-        document.getElementById("sideBar").style.width = "30px";
+        document.getElementById("sideBar").style.width = "50px";
         document.getElementById("intro").style.display = "none";
         document.getElementById("menuAnimals").style.display = "block";
 
@@ -134,7 +134,7 @@ const listAnimals = (index, title) => {
     const ListContainer = document.getElementById("listOfAnimalNames")
 
     const LiElement = document.createElement("li");
-    LiElement.innerHTML = `<a href="#" onclick="animalLiFunction(${index})">${title}</a>`;
+    LiElement.innerHTML = `<i class="fa-solid fa-fish-fins"></i> <a href="#" onclick="animalLiFunction(${index})">${title}</a>`;
 
     ListContainer.appendChild(LiElement);
 }
@@ -160,16 +160,23 @@ function showHideLateral() {
 
     if (estadoLat == "open") {
         document.getElementById("menuAnimals").style.width = "45px";
-        document.getElementById("menuAnimals").style.left = "2px";
+        document.getElementById("menuAnimals").style.marginLeft = "5px";
+        document.getElementById("menuAnimals").style.left = "0px";
         document.getElementById("menuAnimals").style.border = "0px solid #000000";
+        document.getElementById("menuAnimals").style.borderRadius  = "0px";
         document.getElementById("listOfAnimalNames").style.display = "none";
+        document.getElementById("listButton").style.boxShadow="none";
+        document.getElementById("listButton").style.borderRadius="10px";
         estadoLat = "close";
     }
     else if (estadoLat == "close") {
         document.getElementById("menuAnimals").style.width = "300px";
         document.getElementById("menuAnimals").style.left = "5%";
-        document.getElementById("menuAnimals").style.border = "3px solid var(--color_second)";
+        document.getElementById("menuAnimals").style.border = "1px solid var(--color_second)";
+        document.getElementById("menuAnimals").style.borderRadius  = "20px";
         document.getElementById("listOfAnimalNames").style.display = "block";
+        document.getElementById("listButton").style.boxShadow="-3px -3px 16px var(--color_shadow)";
+        document.getElementById("listButton").style.borderRadius="0 18px 0 18px";
         estadoLat = "open";
     }
 }

@@ -88,7 +88,7 @@ const fly =(locationCoords, nombre, nombrecientifico)=>{
 
             
              
-            easing: (t) => gitt,
+            easing: (t) => t,
              
             essential: true
             });

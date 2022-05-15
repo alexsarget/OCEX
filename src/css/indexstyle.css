@@ -290,7 +290,6 @@ button {
     position        : fixed;
     top             : 13%;
     left            : 5%;
-    border          : 1px solid var(--color_second) !important;
     border-radius   : 20px;
     background-color: #FFF;
     width           : 300px;

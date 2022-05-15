@@ -1,6 +1,6 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiYmhkZmdlbmVyYWwiLCJhIjoiY2wzNWJrc2U0MGFwbjNkbXBtbnBkMjVvdSJ9.J7hpahoJVbj48EFRFfQKfg';
-const start = [-105, 24];
 
+const start = [-105, 24];
 const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/bhdfgeneral/cl36xkmzk000c14qli8s6hjli',
@@ -11,10 +11,10 @@ const map = new mapboxgl.Map({
 
 const markersInfo = () => {
     let marker = [];
+
     fetch("./animales.json").then(function (resp) {
         return resp.json();
     }).then(function (data) {
-
         for (let i = 0; i < data.length; i++) {
             marker[i] = data[i];
 
@@ -22,29 +22,22 @@ const markersInfo = () => {
                 markersPrint(marker);
             }
         }
-
     })
-
 }
 
 
 const markers = markersInfo()
-console.log(markers)
 
 const markersPrint = (valueMarkers) => {
-
     let markers = valueMarkers;
     let index = 0;
 
     for (const marker of markers) {
-        // Create a DOM element for each marker.
         let atajo = marker.location[0]
         let coords = atajo.center;
         index++;
 
         fixcoords = [coords[1], coords[0]]
-        console.log(fixcoords)
-        console.log("su index es de " + index)
 
         const el = document.createElement('div');
         el.id = 'fly'
@@ -65,28 +58,23 @@ const markersPrint = (valueMarkers) => {
 
         listAnimals(index, marker.title)
     }
-
 }
 
 
 
 const fly = (locationCoords, nombre, nombrecientifico) => {
-
     let coordsFly = locationCoords.center;
+    fixcoordsFly = [coordsFly[1], coordsFly[0]];
 
-    fixcoordsFly = [coordsFly[1], coordsFly[0]]
     const end = fixcoordsFly;
 
     map.flyTo({
-
         center: end,
         zoom: 6,
         bearing: 0,
 
         speed: .5, // make the flying slow
         curve: 2, // change the speed at which it zooms out
-
-
 
         easing: (t) => t,
 
@@ -95,10 +83,10 @@ const fly = (locationCoords, nombre, nombrecientifico) => {
 
     document.getElementById("animalName").style.display = "block";
 
-    let title = `${nombre}`;
-    let scientific = `${nombrecientifico}`
-
+    const title = `${nombre}`;
+    const scientific = `${nombrecientifico}`
     const container = document.getElementById("animalText");
+
     container.innerHTML = `<h1>${title}</h1><p>${scientific}   <a href="./app/storytelling/storytelling.html">Ver info</a></p>`;
 
 };

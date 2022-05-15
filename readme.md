@@ -16,6 +16,13 @@ graph TD
 
 ### 🧪 TECNOLOGIAS APLICADAS
 
+- Node Js
+- HTML
+- CSS
+- JS
+- Jest
+- Azure
+
 ### 📚 ESTRUCTURA DE DIRECTORIOS
 ![OCEX](https://user-images.githubusercontent.com/91100184/168481805-18c9e3d2-1b60-45d1-98b6-1549b6ef3db0.jpg)
 

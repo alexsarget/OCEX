@@ -42,7 +42,7 @@ D. RESPONSIVE
 /*-- VARIABLES CSS --*/
 :root {
     /*-- /Font Family --*/
-    --font_family-body: font-family: 'Dosis', sans-serif;
+    --font_family-body: font-family: 'Dosis', sans-serif !important;
     ;
     --font_family-title: ;
 
@@ -106,7 +106,7 @@ D. RESPONSIVE
 body {
     margin     : 0;
     padding    : 0;
-    font-family: var(--font_family-body);
+    font-family: var(--font_family-body) !important;
 }
 
 a,
@@ -329,8 +329,8 @@ h4 {
     font-weight: var(--font_weight-semibold);
     text-align : center;
 }
-
-.step .button__title-right {}
+/* 
+.step .button__title-right {} */
 
 
 @media (max-width: 750px) {

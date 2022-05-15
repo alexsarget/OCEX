@@ -33,15 +33,18 @@ console.log(markers)
 
 const markersPrint=(valueMarkers)=>{
 
-    let markers=valueMarkers
+    let markers=valueMarkers;
+    let index=0;
 
     for (const marker of markers) {
         // Create a DOM element for each marker.
         let atajo=marker.location[0]
         let coords=atajo.center;
-        
+        index++;
+
         fixcoords=[coords[1],coords[0]]
         console.log(fixcoords)
+        console.log("su index es de "+index)
         
         const el = document.createElement('div');
         el.id='fly'
@@ -59,6 +62,8 @@ const markersPrint=(valueMarkers)=>{
         new mapboxgl.Marker(el)
         .setLngLat(fixcoords)
         .addTo(map);
+
+        listAnimals(index,marker.title)
         }
     
 }
@@ -119,15 +124,11 @@ const fly =(locationCoords, nombre, nombrecientifico)=>{
             let scientific=`${nombrecientifico}`
 
             const container=document.getElementById("animalText");
-            container.innerHTML=`<h1>${title}</h1><p>${scientific}</p>`;
-            
-            
+            container.innerHTML=`<h1>${title}</h1><p>${scientific}<a href="www.google.com">Ver info</a></p>`;
+                
 
     }
      
-    
-     
-    
     };
 
 const close=()=>{
@@ -149,3 +150,29 @@ function showHideSideBar(){
     estado="open";
     }
 }
+
+
+const listAnimals=(index,title)=>{
+
+    const ListContainer=document.getElementById("listOfAnimalNames")
+     
+    const LiElement=document.createElement("li");
+    LiElement.innerHTML=`<a href="#" onclick="animalLiFunction(${index})">${title}</a>`;
+    
+    ListContainer.appendChild(LiElement);
+}
+
+const animalLiFunction =(i)=>{
+
+    fetch("./animales.json").then(function (resp) {
+        return resp.json();
+    }).then(function (data){
+        
+        animalList=data[i-1];
+        console.log(animalList)
+        
+        let atajoList=animalList.location[0];
+        fly(atajoList,animalList.title,animalList.scientificName);
+    })
+}
+

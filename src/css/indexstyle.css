@@ -180,7 +180,7 @@ button {
 .showHide {
     position     : absolute;
     top          : 10px;
-    right        : 6px;
+    right        : 4px;
     width        : 45px;
     height       : 45px;
     border-radius: 50%;
@@ -309,13 +309,14 @@ button {
     width          : 90%;
     overflow       : hidden;
     transition     : 0.5s;
-
+    
 }
 
 #listOfAnimalNames li {
     list-style-type: none;
     color          : var(--color_text);
-    padding-bottom: 0.3rem
+    padding-left: 0rem;
+    padding-bottom: 0.3rem;
 }
 
 #listOfAnimalNames a {
@@ -352,18 +353,25 @@ button {
     right           : 0px;
     width           : 45px;
     height          : 45px;
-    border: 1px solid #047C99;
+    border: 1px solid #fff;
     border-radius   : 0 18px 0 18px;
     box-shadow      : -3px -3px 16px var(--color_shadow);
     background-color: transparent;
+    transition: .3s ease-in-out;
 }
 
 .listButton:hover {
-    
+    border    : 1px solid #FFF;
+    background     : var(--color_second);
 }
 
 .listButton i {
     width: 100%;
     font-size: 1.4rem;
-    color: var(--color_third)
+    color: var(--color_first);
+    transition: .3s ease-in-out;
+}
+
+.listButton:hover i {
+    color: #FFF;
 }

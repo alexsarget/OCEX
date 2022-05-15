@@ -64,3 +64,5 @@ typings/
 # development config.js files
 /src/config.js
 
+# Proof File
+.prueba.js

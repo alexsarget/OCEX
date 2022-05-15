@@ -116,7 +116,14 @@ h4 {
     color: var(--color_text);
 }
 
-
+nav li{
+    display:inline-block;
+    width:10%;
+    padding:5px 10px;
+    text-align:center;
+    font-family: var(--font_family-body) !important;
+    color: azure;
+    }
 /*============ FOOTER SECTION |  A. Global  =========*/
 
 
@@ -295,4 +302,4 @@ h4 {
 .listButton img{
     width: 100%;
 }
- 
+

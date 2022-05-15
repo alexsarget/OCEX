@@ -88,7 +88,7 @@ const fly =(locationCoords, nombre, nombrecientifico)=>{
 
             
              
-            easing: (t) => t,
+            easing: (t) => gitt,
              
             essential: true
             });
@@ -114,11 +114,15 @@ function showHideSideBar(){
     if(estado=="open"){
         document.getElementById("sideBar").style.width="30px";
         document.getElementById("intro").style.display="none";
+        document.getElementById("menuAnimals").style.display="block";
+        
     estado="close";
     }
     else if(estado=="close"){
         document.getElementById("sideBar").style.width="600px"; 
         document.getElementById("intro").style.display="block";  
+        document.getElementById("menuAnimals").style.display="none";
+        document.getElementById("listOfAnimalNames").style.display="none";
     estado="open";
     }
 }
@@ -148,3 +152,21 @@ const animalLiFunction =(i)=>{
     })
 }
 
+
+let estadoLat="open";
+
+function showHideLateral(){
+
+    if(estadoLat=="open"){
+        document.getElementById("menuAnimals").style.width="30px";
+        document.getElementById("menuAnimals").style.left="0px";
+        document.getElementById("listOfAnimalNames").style.display="none";
+        estadoLat="close";
+    }
+    else if(estadoLat=="close"){
+        document.getElementById("menuAnimals").style.width="300px"; 
+        document.getElementById("menuAnimals").style.left="5%";
+        document.getElementById("listOfAnimalNames").style.display="block";  
+        estadoLat="open";
+    }
+}

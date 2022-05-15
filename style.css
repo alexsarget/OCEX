@@ -79,7 +79,7 @@ body { margin: 0;
 }
 
 .menuAnimals{
-    position: absolute;
+    position: fixed;
     background-color: var(--primary-color);
     width:300px;
     height: 550px;
@@ -88,5 +88,29 @@ body { margin: 0;
     left: 5%;
 
     color: aliceblue;
+
+    overflow:hidden;
+    transition: 0.5s;
+    display:none;
+}
+
+#listOfAnimalNames{
+    position: relative;
+    background-color:midnightblue;
+    height: 90%;
+    width:90%;
+    overflow: hidden;
+    transition: 0.5s;
+    display:block;
+}
+
+.listButton{
+    width:20px;
+    height:20px;
+
+    position: absolute;
+
+    top: 0px;
+    right: 0px;
 }
  

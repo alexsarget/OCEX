@@ -42,7 +42,7 @@ D. RESPONSIVE
 /*-- VARIABLES CSS --*/
 :root {
     /*-- /Font Family --*/
-    --font_family-body:'Dosis', sans-serif !important;
+    --font_family-body: 'Dosis', sans-serif !important;
     ;
     --font_family-title: ;
 
@@ -124,11 +124,7 @@ h4 {
 }
 
 p {
-    line-height: 1.2em ;
-}
-
-h3 {
-    font-size: var(--font_size-h3)
+    line-height: 1.2em;
 }
 
 /*============ FOOTER SECTION |  A. Global  =========*/
@@ -258,7 +254,7 @@ h3 {
 
 .step h3,
 .step p {
-    padding    : 0px 20px;
+    padding: 0px 20px;
 }
 
 .step h3 {
@@ -272,7 +268,7 @@ h3 {
     display        : flex;
     justify-content: space-between;
     align-items    : center;
-    margin-bottom: 1rem;
+    margin-bottom  : 1rem;
 }
 
 .step .card__description-headtitle h3:first-child {
@@ -317,14 +313,13 @@ h3 {
     padding      : 1.5rem 0.5rem;
     background   : var(--color_first) !important;
     color        : #FFF;
-    word-wrap: break-word;
+    word-wrap    : break-word;
     text-align   : center;
     font-size    : 2.3em;
 }
 
 .step .card__description-button.right {
     background: var(--color_second) !important;
-    /* font-size    : 2.3vw; */
 }
 
 .step .card__description-buttons_titles {
@@ -339,6 +334,7 @@ h3 {
     font-weight: var(--font_weight-semibold);
     text-align : center;
 }
+
 /* 
 .step .button__title-right {} */
 

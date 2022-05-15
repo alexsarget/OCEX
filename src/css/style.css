@@ -101,3 +101,44 @@ D. RESPONSIVE
         --font_size-smaller: .813em;
     }
 }
+
+
+/*----------  START SUBSECTION | GLOBAL STYLES   ----------*/
+body {
+    margin     : 0;
+    padding    : 0;
+    font-family: var(--font_family-body) !important;
+}
+
+a,
+a:hover,
+a:visited {
+    color: #0071bc;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    color: var(--color_text);
+}
+
+p {
+    line-height: 1.2em;
+}
+
+/*============ FOOTER SECTION |  A. Global  =========*/
+
+
+/*=============================================
+=  START SECTION | B. HTML ELEMENTS STYLING   =
+=============================================*/
+
+/*----------  START SUBSECTION | REUSABLE CSS CLASSES & IDs   ----------*/
+
+
+.mapboxgl-ctrl-attrib-inner,
+.mapboxgl-ctrl-bottom-left {
+    display: none;
+}

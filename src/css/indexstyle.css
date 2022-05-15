@@ -356,7 +356,7 @@ button {
     /* color          : var(--color_second) */
 }
 
-.listButton {
+#listButton {
     top             : 0px;
     position        : absolute;
     right           : 0px;
@@ -369,7 +369,7 @@ button {
     transition      : .3s ease-in-out;
 }
 
-.listButton:hover {
+#listButton:hover {
     border    : 1px solid #FFF;
     background: var(--color_second);
 }

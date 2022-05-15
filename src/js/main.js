@@ -164,6 +164,8 @@ function showHideLateral() {
         document.getElementById("menuAnimals").style.border = "0px solid #000000";
         document.getElementById("menuAnimals").style.borderRadius  = "0px";
         document.getElementById("listOfAnimalNames").style.display = "none";
+        document.getElementById("listButton").style.boxShadow="none";
+        document.getElementById("listButton").style.borderRadius="10px";
         estadoLat = "close";
     }
     else if (estadoLat == "close") {
@@ -172,6 +174,8 @@ function showHideLateral() {
         document.getElementById("menuAnimals").style.border = "1px solid var(--color_second)";
         document.getElementById("menuAnimals").style.borderRadius  = "20px";
         document.getElementById("listOfAnimalNames").style.display = "block";
+        document.getElementById("listButton").style.boxShadow="-3px -3px 16px var(--color_shadow)";
+        document.getElementById("listButton").style.borderRadius="0 18px 0 18px";
         estadoLat = "open";
     }
 }

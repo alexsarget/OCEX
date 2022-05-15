@@ -1,11 +1,11 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiZXJpY2tka25pZ2h0IiwiYSI6ImNsMzR5MnBtYjAwZzUzaW9ibTg2dmVmZm0ifQ.0t-OOaupeo1KtAAkmxYcAQ';
-const start = [-103, 24];
+const start = [-105, 24];
 
 const map = new mapboxgl.Map({
 container: 'map',
 style: 'mapbox://styles/mapbox/dark-v10',
 center: start,
-zoom: 4.6
+zoom: 4.2
 });
 
 
@@ -52,7 +52,7 @@ const markersPrint=(valueMarkers)=>{
         el.style.backgroundSize = '130%';
          
         el.addEventListener('click', () => {
-            fly(fixcoords);
+            fly(atajo);
         });
          
         // Add markers to the map.
@@ -65,8 +65,12 @@ const markersPrint=(valueMarkers)=>{
 
 let isAtStart = true;
 
-const fly =(coordinates)=>{
-    const end = coordinates;
+const fly =(locationCoords)=>{
+
+    let coordsFly=locationCoords.center;
+        
+    fixcoordsFly=[coordsFly[1],coordsFly[0]]
+    const end = fixcoordsFly;
     
     const target = isAtStart ? end : start;
 

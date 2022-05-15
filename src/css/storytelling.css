@@ -5,14 +5,14 @@ Project:         OCEX | HACK THE OCEAN | HACKATON
 
 Author:          Equipo Launch X
 Website:         link
-First Color:     ;
-Second Color:    ;
-Third Color:     ;
-Fourth Color:    ; 
-Fifth Color:     ;        
+First Color:     #051426;
+Second Color:    #047C99;
+Third Color:     #ddb01c;
+Fourth Color:    #b8f7ff; 
+text Color:     #051426;        
 Version:         1.0
-main-font:       'Raleway', sans-serif
-Headers:         'Noto Serif Pro', sans-serif
+main-font:       'Dosis', sans-serif;
+Headers:         
 
 -------------------------------------------------------------------*/
 
@@ -42,7 +42,8 @@ D. RESPONSIVE
 /*-- VARIABLES CSS --*/
 :root {
     /*-- /Font Family --*/
-    --font_family-body : font-family: 'Dosis', sans-serif;;
+    --font_family-body: font-family: 'Dosis', sans-serif;
+    ;
     --font_family-title: ;
 
     /*-- /Font Sizes --*/
@@ -64,7 +65,7 @@ D. RESPONSIVE
     --color_first : #051426;
     --color_second: #047C99;
     --color_third : #ddb01c;
-    --color_fourth: #b8f7ff
+    --color_fourth: #b8f7ff;
     --color_text  : #051426;
 
     /*-- /Background Colors/ --*/
@@ -264,16 +265,16 @@ h4 {
     padding-bottom: 0.05rem;
 }
 
-.step .card__description-headtitle{
-    display: flex;
+.step .card__description-headtitle {
+    display        : flex;
     justify-content: space-between;
-    align-items: center;
+    align-items    : center;
 }
 
 .step .head__title-status {
-    font-size: var(--font_size-normal);
+    font-size  : var(--font_size-normal);
     font-weight: var(--font_weight-medium);
-    color: var(--color_third);
+    color      : var(--color_third);
 }
 
 .step .card__description-scientificname {
@@ -281,35 +282,35 @@ h4 {
 }
 
 .step .card__description-family {
-    font-size: var(--font_size-h3);
+    font-size  : var(--font_size-h3);
     font-weight: var(--font_weight-semibold);
 }
 
 .step .card__description-family-subtitle {
-    font-size: var(--font_size-small);
+    font-size     : var(--font_size-small);
     padding-bottom: 0.8rem;
 }
 
 .step .card__description {
-    line-height: 1rem;
+    line-height   : 1rem;
     padding-bottom: 0.8rem;
 }
 
-.step .card__buttons{
-    display: flex;
-    align-items: center;
+.step .card__buttons {
+    display        : flex;
+    align-items    : center;
     justify-content: space-around;
-} 
+}
 
 .step .card__description-button {
-    width: 6rem;
-    margin: 0 1rem;
+    width        : 6rem;
+    margin       : 0 1rem;
     border-radius: 10px;
-    padding: 1.5rem 0.5rem;
-    background: var(--color_first) !important;
-    color: #FFF;
-    text-align: center;
-    font-size: 2.3em;
+    padding      : 1.5rem 0.5rem;
+    background   : var(--color_first) !important;
+    color        : #FFF;
+    text-align   : center;
+    font-size    : 2.3em;
 }
 
 .step .card__description-button.right {
@@ -317,20 +318,19 @@ h4 {
 }
 
 .step .card__description-buttons_titles {
-    display: flex;
-    align-items: center;
+    display        : flex;
+    align-items    : center;
     justify-content: space-around;
-    
+
 }
 
 .step .button__title {
-    font-size: var(--font_size-small);
+    font-size  : var(--font_size-small);
     font-weight: var(--font_weight-semibold);
-    text-align: center;
+    text-align : center;
 }
 
-.step .button__title-right{
-}
+.step .button__title-right {}
 
 
 @media (max-width: 750px) {

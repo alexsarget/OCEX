@@ -116,14 +116,7 @@ h4 {
     color: var(--color_text);
 }
 
-nav li{
-    display:inline-block;
-    width:10%;
-    padding:5px 10px;
-    text-align:center;
-    font-family: var(--font_family-body) !important;
-    color: azure;
-    }
+
 /*============ FOOTER SECTION |  A. Global  =========*/
 
 
@@ -133,187 +126,199 @@ nav li{
 
 /*----------  START SUBSECTION | REUSABLE CSS CLASSES & IDs   ----------*/
 
-#map { position: absolute; 
-    top: 0; 
-    bottom: 0; 
-    height: 100%;
-    width: 100%; }
+#map {
+    position: absolute;
+    top     : 0;
+    bottom  : 0;
+    height  : 100%;
+    width   : 100%;
+}
 
 .marker {
-    display: block;
-    border: none;
+    display      : block;
+    border       : none;
     border-radius: 50%;
-    cursor: pointer;
-    padding: 0;
+    cursor       : pointer;
+    padding      : 0;
 
-    animation-name:fading;
-    animation-duration: 2.5s;
-    animation-timing-function:ease-out;
+    animation-name           : fading;
+    animation-duration       : 2.5s;
+    animation-timing-function: ease-out;
     animation-iteration-count: infinite;
-    animation-delay: 0s;
-    }
+    animation-delay          : 0s;
+}
+
 @keyframes fading {
-    0%{border:0px solid rgba(00, 00, 00, 0.0)}
-    50%{border: 8px solid var(--color_first);}
-    100%{border:0px solid rgba(00, 00, 00, 0.0)}
+    0% {
+        border: 0px solid rgba(00, 00, 00, 0.0)
+    }
+
+    50% {
+        border: 8px solid var(--color_first);
+    }
+
+    100% {
+        border: 0px solid rgba(00, 00, 00, 0.0)
+    }
 }
 
 
-#intro{
-    position: relative;
-    background-color:var(--color_second);
-    height: 90%;
-    width:90%;
-    overflow: hidden;
-    transition: 0.5s;
-    display:block;
+#intro {
+    position        : relative;
+    background-color: var(--color_second);
+    height          : 90%;
+    width           : 90%;
+    overflow        : hidden;
+    transition      : 0.5s;
+    display         : block;
 
-    border-top-right-radius: 100px;
+    border-top-right-radius   : 100px;
     border-bottom-right-radius: 30px;
 
     visibility: visible;
 }
 
-.container{
-    display:flex;
+.container {
+    display       : flex;
     flex-direction: column;
-    align-items: center;
+    align-items   : center;
 }
 
-.container img{
-    width:200px;  
+.container img {
+    width: 200px;
 }
-.texto-info{
-    width:90%;
+
+.texto-info {
+    width     : 90%;
     margin-top: 15px;
 }
 
 
-.showHide{
-    position: absolute;
-    top: 10px;
-    right: 2px;
-    width: 45px;
-    height: 45px;
+.showHide {
+    position     : absolute;
+    top          : 10px;
+    right        : 2px;
+    width        : 45px;
+    height       : 45px;
     border-radius: 50%;
 }
-.showHide img{
-    height: 100%;
+
+.showHide img {
+    height  : 100%;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top     : 0px;
+    left    : 0px;
 }
 
-.showHideB{
+.showHideB {
     position: absolute;
-    width:400px;
-    height: 80px;
-    bottom:10px;  
-    
+    width   : 400px;
+    height  : 80px;
+    bottom  : 10px;
     background-color: var(--color_fourth);
-    border-radius: 20px;
-    border-color: rgba(00, 00, 00, 0.0);
-
+    border-radius   : 20px;
+    border-color    : rgba(00, 00, 00, 0.0);
     font-size: var(--font_size-h2);
 }
 
-.sideBar{
-    position:fixed;
+.sideBar {
+    position        : fixed;
     background-color: var(--color_first);
-    
-    width:600px;
-    height:90%;
-
-    border-right: 3px solid rgba(9, 202, 255, 0.3);
-    padding: 0 10px;
-    top:5%;
-    left:0;
-
-    overflow:hidden;
+    width           : 600px;
+    height          : 90%;
+    border-right    : 3px solid rgba(9, 202, 255, 0.3);
+    padding         : 0 10px;
+    top             : 5%;
+    left            : 0;
+    overflow  : hidden;
     transition: 0.5s;
 }
 
-#animalName{
+#animalName {
     background-color: var(--color_first);
-    position: absolute;
-    bottom: 100px;
-    right: 100px;
-    width:40%; 
-    height:100px;
-    
+    position        : absolute;
+    bottom          : 100px;
+    right           : 100px;
+    width           : 40%;
+    height          : 100px;
+
     display: none;
 
     transition: 5s;
-    overflow:hidden;
+    overflow  : hidden;
 
     border-radius: 25px 25px 80px 25px;
-    padding-left: 40px;
-    padding-top: 0px;
+    padding-left : 40px;
+    padding-top  : 0px;
 }
 
-.menuAnimals{
-    position: fixed;
+.menuAnimals {
+    position        : fixed;
     background-color: var(--color_first);
-    width:300px;
-    height: 550px;
+    width           : 300px;
+    height          : 550px;
 
-    top: 13%;
+    top : 13%;
     left: 5%;
 
-    color:var(--color_fourth);
-    border-radius:10px;
-    border: 3px solid var(--color_second);
+    color        : var(--color_fourth);
+    border-radius: 10px;
+    border       : 3px solid var(--color_second);
 
-    overflow:hidden;
+    overflow  : hidden;
     transition: 0.5s;
-    display:none;
+    display   : none;
 }
-#animalText h1{
-    color: var(--color_second);
-    margin-top: 5px;
+
+#animalText h1 {
+    color        : var(--color_second);
+    margin-top   : 5px;
     margin-bottom: 5px;
-    font-family: var(--font_family-body);
+    font-family  : var(--font_family-body);
 }
 
-#animalText p{
-    color: var(--color_fourth);
+#animalText p {
+    color      : var(--color_fourth);
     font-family: var(--font_family-body);
-    font-size: var(--font_size-h3);
-    margin-top: 0px;;
+    font-size  : var(--font_size-h3);
+    margin-top : 0px;
+    ;
 }
-#animalText a{
+
+#animalText a {
     text-decoration: none;
-    color: var(--color_second)
+    color          : var(--color_second)
 }
 
-#listOfAnimalNames{
+#listOfAnimalNames {
     position: relative;
-    
-    height: 90%;
-    width:90%;
-    overflow: hidden;
+
+    height    : 90%;
+    width     : 90%;
+    overflow  : hidden;
     transition: 0.5s;
-    display:block;
-}
-#listOfAnimalNames a{
-    text-decoration: none;
-    font-size: var(--font_size-h2);
-    font-family: var(--font_family-title);
-    
+    display   : block;
 }
 
-.listButton{
-    width:45px;
-    height:45px;
+#listOfAnimalNames a {
+    text-decoration: none;
+    font-size      : var(--font_size-h2);
+    font-family    : var(--font_family-title);
+
+}
+
+.listButton {
+    width : 45px;
+    height: 45px;
 
     position: absolute;
 
-    top: 0px;
+    top  : 0px;
     right: 0px;
 
     background-color: rgba(00, 00, 00, 0.0);
 }
-.listButton img{
+
+.listButton img {
     width: 100%;
 }
-

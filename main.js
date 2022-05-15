@@ -112,7 +112,7 @@ let estado = "open"
 function showHideSideBar() {
 
     if (estado == "open") {
-        document.getElementById("sideBar").style.width = "30px";
+        document.getElementById("sideBar").style.width = "50px";
         document.getElementById("intro").style.display = "none";
         document.getElementById("menuAnimals").style.display = "block";
 

@@ -32,7 +32,9 @@ const markers=markersInfo()
 console.log(markers)
 
 const markersPrint=(valueMarkers)=>{
+
     let markers=valueMarkers
+
     for (const marker of markers) {
         // Create a DOM element for each marker.
         let atajo=marker.location[0]
@@ -62,8 +64,9 @@ const markersPrint=(valueMarkers)=>{
 }
 
 let isAtStart = true;
-const fly =(coords)=>{
-    const end = coords;
+
+const fly =(coordinates)=>{
+    const end = coordinates;
     
     const target = isAtStart ? end : start;
 

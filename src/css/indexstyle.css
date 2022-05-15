@@ -309,7 +309,6 @@ button {
     width          : 90%;
     overflow       : hidden;
     transition     : 0.5s;
-    
 }
 
 #listOfAnimalNames li {
@@ -317,6 +316,7 @@ button {
     color          : var(--color_text);
     padding-left: 0rem;
     padding-bottom: 0.3rem;
+    transition: .2s ease-in-out;
 }
 
 #listOfAnimalNames a {
@@ -325,6 +325,15 @@ button {
     font-size      : var(--font_size-h2);
     font-family    : var(--font_family-title);
     color          : var(--color_text);
+    transition: .2s ease-in-out;
+}
+
+#listOfAnimalNames li:hover {
+    color: var(--color_second);
+}
+
+#listOfAnimalNames a:hover { 
+    color: var(--color_third);
 }
 
 #animalText h1 {

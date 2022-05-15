@@ -162,6 +162,10 @@ p {
     z-index : 5;
 }
 
+#header h1 {
+    font-size: var(--font_size-biggest);
+}
+
 #header h1,
 #header h2,
 #header p {

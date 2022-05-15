@@ -158,10 +158,11 @@ let estadoLat = "open";
 function showHideLateral() {
 
     if (estadoLat == "open") {
-        document.getElementById("menuAnimals").style.width = "40px";
+        document.getElementById("menuAnimals").style.width = "45px";
         document.getElementById("menuAnimals").style.marginLeft = "5px";
-        document.getElementById("menuAnimals").style.left = "2px";
+        document.getElementById("menuAnimals").style.left = "0px";
         document.getElementById("menuAnimals").style.border = "0px solid #000000";
+        document.getElementById("menuAnimals").style.borderRadius  = "0px";
         document.getElementById("listOfAnimalNames").style.display = "none";
         estadoLat = "close";
     }
@@ -169,6 +170,7 @@ function showHideLateral() {
         document.getElementById("menuAnimals").style.width = "300px";
         document.getElementById("menuAnimals").style.left = "5%";
         document.getElementById("menuAnimals").style.border = "1px solid var(--color_second)";
+        document.getElementById("menuAnimals").style.borderRadius  = "20px";
         document.getElementById("listOfAnimalNames").style.display = "block";
         estadoLat = "open";
     }

@@ -288,20 +288,20 @@ button {
 #menuAnimals {
     display         : none;
     position        : fixed;
-    top             : 13%;
+    top             : 14%;
     left            : 5%;
     border-radius   : 20px;
     background-color: #FFF;
     border          : 1px solid var(--color_second);
     width           : 300px;
-    height          : 550px;
+    height          : 530px;
     color           : var(--color_fourth);
     overflow        : hidden;
     transition      : 0.5s;
 }
 
 #listOfAnimalNames {
-    display        : flex !important;
+    display        : flex;
     flex-direction : column;
     justify-content: center;
     position       : relative;

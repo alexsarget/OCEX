@@ -8,8 +8,10 @@ describe('Pruebas de Reader Storyscroll', () => {
     });
 
     test('2. Test de consulta de animales por id', () => {
-        const animales=Reader.sendData("animales.json");
+        const animales=Reader.readJsonFile("animales.json");
         const animalById = animalconsult.filterById(animales,"totoaba")
-        expect(animalById.lenght).toContain("Totoaba");
+        console.log(animalById[0]);
+        expect(animalById[0].id).toEqual("totoaba");
+        
     })
 })

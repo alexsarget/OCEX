@@ -52,7 +52,7 @@ const markersPrint=(valueMarkers)=>{
         el.style.backgroundSize = '130%';
          
         el.addEventListener('click', () => {
-            fly(atajo);
+            fly(atajo,marker.title,marker.scientificName);
         });
          
         // Add markers to the map.
@@ -65,7 +65,7 @@ const markersPrint=(valueMarkers)=>{
 
 let isAtStart = true;
 
-const fly =(locationCoords)=>{
+const fly =(locationCoords, nombre, nombrecientifico)=>{
 
     let coordsFly=locationCoords.center;
         
@@ -92,6 +92,7 @@ const fly =(locationCoords)=>{
             });
 
             document.getElementById("animalName").style.display="none";
+            document.getElementById("animalText").removeChild();
     }else if(isAtStart==false) {
 
         
@@ -111,8 +112,17 @@ const fly =(locationCoords)=>{
              
             essential: true
             });
-
+            
             document.getElementById("animalName").style.display="block";
+
+            let title=`${nombre}`;
+            let scientific=`${nombrecientifico}`
+
+            const container=document.getElementById("animalText");
+            container.innerHTML=`<h1>${title}</h1><p>${scientific}</p>`;
+            
+            
+
     }
      
     

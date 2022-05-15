@@ -158,7 +158,8 @@ let estadoLat = "open";
 function showHideLateral() {
 
     if (estadoLat == "open") {
-        document.getElementById("menuAnimals").style.width = "45px";
+        document.getElementById("menuAnimals").style.width = "40px";
+        document.getElementById("menuAnimals").style.marginLeft = "5px";
         document.getElementById("menuAnimals").style.left = "2px";
         document.getElementById("menuAnimals").style.border = "0px solid #000000";
         document.getElementById("listOfAnimalNames").style.display = "none";

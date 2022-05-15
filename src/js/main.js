@@ -1,3 +1,4 @@
+
 mapboxgl.accessToken = 'pk.eyJ1IjoiYmhkZmdlbmVyYWwiLCJhIjoiY2wzNWJrc2U0MGFwbjNkbXBtbnBkMjVvdSJ9.J7hpahoJVbj48EFRFfQKfg';
 
 const start = [-105, 24];

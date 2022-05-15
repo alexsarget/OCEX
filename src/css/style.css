@@ -1,0 +1,103 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:         OCEX | HACK THE OCEAN | HACKATON 
+
+Author:          Equipo Launch X
+Website:         link
+First Color:     #051426;
+Second Color:    #047C99;
+Third Color:     #ddb01c;
+Fourth Color:    #b8f7ff; 
+text Color:     #051426;        
+Version:         1.0
+main-font:       'Dosis', sans-serif;
+Headers:         
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+A. GLOBAL
+    1. GOOGLE FONTS
+    2. ROOT
+
+B. HTML ELEMENTS STYLING
+
+C. SECTIONS (CUSTOM CLASSES & IDs)
+
+D. RESPONSIVE
+-------------------------------------------------------------------*/
+
+
+/*=============================================
+=         START SECTION | A. GLOBAL           =
+=============================================*/
+
+/*----------  START SUBSECTION | ROOT  ----------*/
+/*-- GOOGLE FONTS --*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+/*-- VARIABLES CSS --*/
+:root {
+    /*-- /Font Family --*/
+    --font_family-body: font-family: 'Dosis', sans-serif;
+    ;
+    --font_family-title: ;
+
+    /*-- /Font Sizes --*/
+    --font_size-h1     : 1.5em;
+    --font_size-h2     : 1.35em;
+    --font_size-h3     : 1.2em;
+    --font_size-biggest: 2em;
+    --font_size-big    : 1.5em;
+    --font_size-normal : 1em;
+    --font_size-small  : .813em;
+    --font_size-smaller: .75em;
+
+    /*-- /Font Weight/ --*/
+    --font_weight-bolder  : 900;
+    --font_weight-semibold: 600;
+    --font_weight-medium  : 500;
+
+    /*-- /Colors/ --*/
+    --color_first : #051426;
+    --color_second: #047C99;
+    --color_third : #ddb01c;
+    --color_fourth: #b8f7ff;
+    --color_text  : #051426;
+
+    /*-- /Background Colors/ --*/
+    --color_body     : ;
+    --color_container: ;
+
+    /*-- /Margins/ --*/
+    --mrl_1_5: 1.5rem;
+    --mb_2_5 : 2.5rem;
+    --mb_2   : 2rem;
+    --mb_1_5 : 1.5rem;
+    --mb_1   : 1rem;
+    --mb_0-75: .75rem;
+    --mb_0-25: .25rem;
+    --mb_0-5 : .5rem;
+
+    /*-- /Z-Index/ --*/
+    --z-behind : -10;
+    --z-tooltip: 10;
+    --z-fixed  : 100;
+}
+
+/*-- RESPONSIVE TIPOGRAPHY --*/
+@media screen and (min-width: 992px) {
+    :root {
+        --font_size-h1     : 2.25em;
+        --font_size-h2     : 1.5em;
+        --font_size-h3     : 1.25em;
+        --font_size-biggest: 4em;
+        --font_size-big    : 2.5em;
+        --font_size-normal : 1em;
+        --font_size-small  : .875em;
+        --font_size-smaller: .813em;
+    }
+}

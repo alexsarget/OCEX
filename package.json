@@ -1,7 +1,7 @@
 {
-  "name": "ocex",
+  "name": "package-ocex",
   "version": "1.0.0",
-  "description": "",
+  "description": "| NOMBRE(S)                         |                             Links a Githubs Personales |\r | --------------------------------  | ---------------------------------------------------:   |\r | `👩 1. Flor Nepomuceno`           |  📎 [Link a Github](https://github.com/FlorNepomuceno) |\r | `👨 2. Emmanuel Hernández`        |  📎 [Link a Github](https://github.com/antoni-codes)   |\r | `👨🏻 3. Alejandro Aguilar`         |  📎 [Link a Github](https://github.com/alexsarget)     |\r | `👨🏻 4. Erick Montes`              |  📎 [Link a Github](https://github.com/ErickMontesDK)  |\r | `👨🏻 5. José Anaya`                |  📎 [Link a Github](https://github.com)                |",
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +10,20 @@
     "type": "git",
     "url": "git+https://github.com/alexsarget/OCEX.git"
   },
-  "author": "",
+  "author": "OCEX TEAM",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/alexsarget/OCEX/issues"
   },
-  "homepage": "https://github.com/alexsarget/OCEX#readme"
+  "homepage": "https://github.com/alexsarget/OCEX#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "keywords": [
+    "hackaton",
+    "hack",
+    "the",
+    "ocean"
+  ]
 }

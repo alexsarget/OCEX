@@ -4,8 +4,8 @@
 
 | NOMBRE(S)                         |                       Links a Githubs Personales |
 | --------------------------------  | ---------------------------------------------------: |
-| `👩 1. Flor`              |  📎 [Link a Github](https://github.com) |
+| `👩 1. Flor Nepomuceno`              |  📎 [Link a Github](https://github.com/FlorNepomuceno) |
 | `👨 2. Emmanuel Hernández`             |  📎 [Link a Github](https://github.com/antoni-codes) |
-| `👨🏻 3. `   |  📎 [Link a Github](https://github.com) |
-| `👨🏻 4. ` |  📎 [Link a Github](https://github.com) |
-| `👨🏻 5. `           |  📎 [Link a Github](https://github.com) |
+| `👨🏻 3. Alejandro Aguilar`   |  📎 [Link a Github](https://github.com/alexsarget) |
+| `👨🏻 4. Erick M.` |  📎 [Link a Github](https://github.com) |
+| `👨🏻 5. José A`           |  📎 [Link a Github](https://github.com) |

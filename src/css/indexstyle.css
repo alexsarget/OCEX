@@ -60,7 +60,7 @@ D. RESPONSIVE
     --color_third : #ddb01c;
     --color_fourth: #b8f7ff;
     --color_text  : #051426;
-    --color_shadow  : #05142636;
+    --color_shadow: #05142636;
 
     /*-- /Background Colors/ --*/
     --color_body     : ;
@@ -119,6 +119,7 @@ h4 {
 
 button {
     cursor: pointer;
+    transition: .3s ease-in-out;
 }
 
 /*============ FOOTER SECTION |  A. Global  =========*/
@@ -190,47 +191,52 @@ button {
     position: absolute;
     top     : 0px;
     left    : 0px;
+    transition: .3s ease-in-out;
+}
+
+.showHide img:hover {
+    transform: scale(.8);    
 }
 
 .sideBar {
-    position           : fixed;
-    top                : 5%;
-    left               : 0;
-    border-radius      : 0 20px 20px 0;
-    background-color   : #FFF;
-    width              : 600px;
-    height             : 90%;
-    overflow           : hidden;
-    transition         : 0.5s;
+    position        : fixed;
+    top             : 5%;
+    left            : 0;
+    border-radius   : 0 20px 20px 0;
+    background-color: #FFF;
+    width           : 600px;
+    height          : 90%;
+    overflow        : hidden;
+    transition      : 0.5s;
 }
 
 #intro {
-    display                   : block;
-    position                  : relative;
-    height                    : 93%;
-    width                     : 90%;
-    box-shadow: 8px 8px 16px var(--color_shadow);
-    background-color          : var(--color_second);
+    display                      : block;
+    position                     : relative;
+    height                       : 93%;
+    width                        : 90%;
+    box-shadow                   : 8px 8px 16px var(--color_shadow);
+    background-color             : var(--color_second);
     /* border-top-right-radius   : 10px; */
-    border-bottom-right-radius: 20px;
-    visibility                : visible;
-    transition                : 0.5s;
-    overflow                  : hidden;
+    border-bottom-right-radius   : 20px;
+    visibility                   : visible;
+    transition                   : 0.5s;
+    overflow                     : hidden;
 }
 
 .sidebar__img {
-    width: 30% !important;
+    width  : 30% !important;
     padding: 2rem 0 2rem 0;
 }
 
 .texto-info {
-    width     : 90%;
-    font-size : 1.1em;
+    width    : 90%;
+    font-size: 1.1em;
 }
 
 .texto-info p {
-    margin: 0 2rem;
-    color: #FFF !important;
+    margin     : 0 2rem;
+    color      : #FFF !important;
     font-weight: var(--font_weight-medium);
 
 }
@@ -241,14 +247,22 @@ button {
     margin-bottom   : 2rem;
     border-radius   : 10px;
     border-color    : rgba(00, 00, 00, 0.0);
+    border          : 1px solid transparent;
     padding         : 1rem 5rem;
-    box-shadow: 0px 0px 16px var(--color_shadow);
+    box-shadow      : 0px 0px 16px var(--color_shadow);
     background-color: var(--color_fourth);
     font-family     : var(--font_family-body);
     letter-spacing  : 0.2em;
     font-size       : var(--font_size-h3);
     font-weight     : var(--font_weight-bolder);
     text-transform  : uppercase;
+    transition      : .3s ease-in-out;
+}
+
+.showHideB:hover {
+    background: transparent;
+    border    : 1px solid #FFF;
+    color     : #FFF;
 }
 
 .showHideB i {
@@ -301,7 +315,7 @@ button {
 }
 
 #animalText a {
-    text-decoration: none;
+    text-decoration   : none;
     /* color          : var(--color_second) */
 }
 
@@ -333,5 +347,3 @@ button {
 .listButton img {
     width: 100%;
 }
-
-

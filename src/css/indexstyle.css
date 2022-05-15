@@ -60,6 +60,7 @@ D. RESPONSIVE
     --color_third : #ddb01c;
     --color_fourth: #b8f7ff;
     --color_text  : #051426;
+    --color_shadow  : #05142636;
 
     /*-- /Background Colors/ --*/
     --color_body     : ;
@@ -116,6 +117,9 @@ h4 {
     color: var(--color_text);
 }
 
+button {
+    cursor: pointer;
+}
 
 /*============ FOOTER SECTION |  A. Global  =========*/
 
@@ -162,20 +166,6 @@ h4 {
     }
 }
 
-
-#intro {
-    position                  : relative;
-    background-color          : var(--color_second);
-    height                    : 90%;
-    width                     : 90%;
-    overflow                  : hidden;
-    transition                : 0.5s;
-    display                   : block;
-    border-top-right-radius   : 100px;
-    border-bottom-right-radius: 30px;
-    visibility                : visible;
-}
-
 .container {
     display       : flex;
     flex-direction: column;
@@ -186,16 +176,10 @@ h4 {
     width: 200px;
 }
 
-.texto-info {
-    width     : 90%;
-    margin-top: 15px;
-}
-
-
 .showHide {
     position     : absolute;
     top          : 10px;
-    right        : 2px;
+    right        : 6px;
     width        : 45px;
     height       : 45px;
     border-radius: 50%;
@@ -208,27 +192,67 @@ h4 {
     left    : 0px;
 }
 
-.showHideB {
-    position        : absolute;
-    width           : 400px;
-    height          : 80px;
-    bottom          : 10px;
-    background-color: var(--color_fourth);
-    border-radius   : 20px;
-    border-color    : rgba(00, 00, 00, 0.0);
-    font-size       : var(--font_size-h2);
+.sideBar {
+    position           : fixed;
+    top                : 5%;
+    left               : 0;
+    border-radius      : 0 20px 20px 0;
+    background-color   : #FFF;
+    width              : 600px;
+    height             : 90%;
+    overflow           : hidden;
+    transition         : 0.5s;
 }
 
-.sideBar {
-    position        : fixed;
-    background-color: var(--color_first);
-    width           : 600px;
-    height          : 90%;
-    border-right    : 3px solid rgba(9, 202, 255, 0.3);
-    top             : 5%;
-    left            : 0;
-    overflow        : hidden;
-    transition      : 0.5s;
+#intro {
+    display                   : block;
+    position                  : relative;
+    height                    : 93%;
+    width                     : 90%;
+    box-shadow: 8px 8px 16px var(--color_shadow);
+    background-color          : var(--color_second);
+    /* border-top-right-radius   : 10px; */
+    border-bottom-right-radius: 20px;
+    visibility                : visible;
+    transition                : 0.5s;
+    overflow                  : hidden;
+}
+
+.sidebar__img {
+    width: 30% !important;
+    padding: 2rem 0 2rem 0;
+}
+
+.texto-info {
+    width     : 90%;
+    font-size : 1.1em;
+}
+
+.texto-info p {
+    margin: 0 2rem;
+    color: #FFF !important;
+    font-weight: var(--font_weight-medium);
+
+}
+
+.showHideB {
+    position        : absolute;
+    bottom          : 10px;
+    margin-bottom   : 2rem;
+    border-radius   : 10px;
+    border-color    : rgba(00, 00, 00, 0.0);
+    padding         : 1rem 5rem;
+    box-shadow: 0px 0px 16px var(--color_shadow);
+    background-color: var(--color_fourth);
+    font-family     : var(--font_family-body);
+    letter-spacing  : 0.2em;
+    font-size       : var(--font_size-h3);
+    font-weight     : var(--font_weight-bolder);
+    text-transform  : uppercase;
+}
+
+.showHideB i {
+    font-style: normal !important;
 }
 
 #animalName {
@@ -238,15 +262,12 @@ h4 {
     right           : 100px;
     width           : 40%;
     height          : 100px;
-
-    display: none;
-
-    transition: 5s;
-    overflow  : hidden;
-
-    border-radius: 25px 25px 80px 25px;
-    padding-left : 40px;
-    padding-top  : 0px;
+    display         : none;
+    transition      : 5s;
+    overflow        : hidden;
+    border-radius   : 25px 25px 80px 25px;
+    padding-left    : 40px;
+    padding-top     : 0px;
 }
 
 .menuAnimals {
@@ -254,17 +275,14 @@ h4 {
     background-color: var(--color_first);
     width           : 300px;
     height          : 550px;
-
-    top : 13%;
-    left: 5%;
-
-    color        : var(--color_fourth);
-    border-radius: 10px;
-    border       : 3px solid var(--color_second);
-
-    overflow  : hidden;
-    transition: 0.5s;
-    display   : none;
+    top             : 13%;
+    left            : 5%;
+    color           : var(--color_fourth);
+    border-radius   : 10px;
+    border          : 3px solid var(--color_second);
+    overflow        : hidden;
+    transition      : 0.5s;
+    display         : none;
 }
 
 #animalText h1 {
@@ -284,12 +302,11 @@ h4 {
 
 #animalText a {
     text-decoration: none;
-    color          : var(--color_second)
+    /* color          : var(--color_second) */
 }
 
 #listOfAnimalNames {
-    position: relative;
-
+    position  : relative;
     height    : 90%;
     width     : 90%;
     overflow  : hidden;
@@ -305,17 +322,16 @@ h4 {
 }
 
 .listButton {
-    width : 45px;
-    height: 45px;
-
-    position: absolute;
-
-    top  : 0px;
-    right: 0px;
-
+    width           : 45px;
+    height          : 45px;
+    position        : absolute;
+    top             : 0px;
+    right           : 0px;
     background-color: rgba(00, 00, 00, 0.0);
 }
 
 .listButton img {
     width: 100%;
 }
+
+

@@ -290,7 +290,7 @@ button {
     position        : fixed;
     top             : 13%;
     left            : 5%;
-    border          : 1px solid var(--color_second);
+    border          : 1px solid var(--color_second) !important;
     border-radius   : 20px;
     background-color: #FFF;
     width           : 300px;
@@ -314,25 +314,25 @@ button {
 #listOfAnimalNames li {
     list-style-type: none;
     color          : var(--color_text);
-    padding-left: 0rem;
-    padding-bottom: 0.3rem;
-    transition: .2s ease-in-out;
+    padding-left   : 0rem;
+    padding-bottom : 0.3rem;
+    transition     : .2s ease-in-out;
 }
 
 #listOfAnimalNames a {
-    padding-left: 0.5rem;
+    padding-left   : 0.5rem;
     text-decoration: none;
     font-size      : var(--font_size-h2);
     font-family    : var(--font_family-title);
     color          : var(--color_text);
-    transition: .2s ease-in-out;
+    transition     : .2s ease-in-out;
 }
 
 #listOfAnimalNames li:hover {
     color: var(--color_second);
 }
 
-#listOfAnimalNames a:hover { 
+#listOfAnimalNames a:hover {
     color: var(--color_third);
 }
 
@@ -362,22 +362,22 @@ button {
     right           : 0px;
     width           : 45px;
     height          : 45px;
-    border: 1px solid #fff;
+    border          : 1px solid #fff;
     border-radius   : 0 18px 0 18px;
     box-shadow      : -3px -3px 16px var(--color_shadow);
     background-color: transparent;
-    transition: .3s ease-in-out;
+    transition      : .3s ease-in-out;
 }
 
 .listButton:hover {
     border    : 1px solid #FFF;
-    background     : var(--color_second);
+    background: var(--color_second);
 }
 
 .listButton i {
-    width: 100%;
-    font-size: 1.4rem;
-    color: var(--color_first);
+    width     : 100%;
+    font-size : 1.4rem;
+    color     : var(--color_first);
     transition: .3s ease-in-out;
 }
 

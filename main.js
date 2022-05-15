@@ -68,7 +68,7 @@ const markersPrint=(valueMarkers)=>{
     
 }
 
-let isAtStart = true;
+
 
 const fly =(locationCoords, nombre, nombrecientifico)=>{
 
@@ -76,40 +76,15 @@ const fly =(locationCoords, nombre, nombrecientifico)=>{
         
     fixcoordsFly=[coordsFly[1],coordsFly[0]]
     const end = fixcoordsFly;
-    
-    const target = isAtStart ? end : start;
 
-    isAtStart = !isAtStart;
-
-    if(isAtStart==true) {
-        map.flyTo({
-    
-            center: start,
-            zoom: 4.6,
-            bearing: 0,
-             
-            speed: 2, // make the flying slow
-            curve: .5, // change the speed at which it zooms out
-             
-            easing: (t) => t,
-             
-            essential: true
-            });
-
-            document.getElementById("animalName").style.display="none";
-            document.getElementById("animalText").removeChild();
-    }else if(isAtStart==false) {
-
-        
-
-        map.flyTo({
+     map.flyTo({
     
             center: end,
             zoom: 6,
             bearing: 0,
              
-            speed: 2, // make the flying slow
-            curve: .5, // change the speed at which it zooms out
+            speed: .5, // make the flying slow
+            curve: 2, // change the speed at which it zooms out
 
             
              
@@ -125,10 +100,7 @@ const fly =(locationCoords, nombre, nombrecientifico)=>{
 
             const container=document.getElementById("animalText");
             container.innerHTML=`<h1>${title}</h1><p>${scientific}<a href="www.google.com">Ver info</a></p>`;
-                
 
-    }
-     
     };
 
 const close=()=>{

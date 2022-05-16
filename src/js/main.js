@@ -88,7 +88,7 @@ const fly = (locationCoords, nombre, nombrecientifico) => {
     const scientific = `${nombrecientifico}`
     const container = document.getElementById("animalText");
 
-    container.innerHTML = `<h1>${title}</h1><p>${scientific}   <a href="./app/storytelling/storytelling.html">Ver recorrido virtual</a></p>`;
+    container.innerHTML = `<h1>${title}</h1><p>${scientific}   <a href="./app/enciclopedia/enciclopedia.html">Ver recorrido virtual</a></p>`;
 
 };
 

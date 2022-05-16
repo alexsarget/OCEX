@@ -9,7 +9,7 @@ graph TD
     id1[(Database)] --> WEB
     id2(API MAPBOX) --> WEB 
     WEB --> Introdución
-    Introdución --> Storytelling
+    Introdución --> enciclopedia
 ```
 
 ## 🛠 DATOS TÉCNICOS

@@ -28,7 +28,8 @@ graph TD
 
 
 ## 🌐 ENLACE DEL PROYECTO
-
+ 🔗 [Enlace](https://ocex.netlify.app/)
+ 
 ## 📖 INTEGRANTES 
 
 | NOMBRE(S)                         |                             Links a Githubs Personales |

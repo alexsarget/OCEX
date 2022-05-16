@@ -270,6 +270,32 @@ button {
     font-style: normal !important;
 }
 
+.btn__new {
+    margin-bottom: 1rem;
+    border-radius   : 10px;
+    border-color    : rgba(00, 00, 00, 0.0);
+    border          : 1px solid transparent;
+    padding         : 1rem 1rem;
+    box-shadow      : 0px 0px 20px var(--color_shadow);
+    background-color: var(--color_fourth);
+    font-family     : var(--font_family-body);
+    letter-spacing  : 0.2em;
+    font-size       : 0.6em;
+    font-weight     : var(--font_weight-bolder);
+    text-transform  : uppercase;
+    transition      : .3s ease-in-out;
+}
+
+.btn__new:hover {
+    background: transparent;
+    border    : 1px solid #051426;
+    color     : var(--color_first);
+}
+
+.btn__new i {
+    font-style: normal !important;
+}
+
 #animalName {
     background-color: var(--color_first);
     position        : absolute;
@@ -326,7 +352,7 @@ button {
 #listOfAnimalNames a {
     padding-left   : 0.5rem;
     text-decoration: none;
-    font-size      : var(--font_size-h2);
+    font-size      : var(--font_size-h3);
     font-family    : var(--font_family-title);
     color          : var(--color_text);
     transition     : .2s ease-in-out;
